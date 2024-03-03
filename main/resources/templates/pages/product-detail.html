@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" layout:decorate="~{layouts/layout}"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Detail</title>
+    <style id="custom-css" type="text/css">
+    :root {--primary-color: #446084;}/* Site Width */.full-width .ubermenu-nav, .container, .row{max-width: 1200px}.row.row-collapse{max-width: 1170px}.row.row-small{max-width: 1192.5px}.row.row-large{max-width: 1230px}body.framed, body.framed header, body.framed .header-wrapper, body.boxed, body.boxed header, body.boxed .header-wrapper, body.boxed .is-sticky-section{ max-width: 1230px}.header-main{height: 58px}#logo img{max-height: 58px}#logo{width:151px;}.header-bottom{min-height: 41px}.header-top{min-height: 30px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 108px;}.header.show-on-scroll,.stuck .header-main{height:70px!important}.stuck #logo img{max-height: 70px!important}.search-form{ width: 80%;}.header-bg-color, .header-wrapper {background-color: rgba(0,0,0,0.9)}.header-bottom {background-color: #ffffff}.header-main .nav > li > a{line-height: 16px }.header-bottom-nav > li > a{line-height: 16px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}/* Background Color */[data-icon-label]:after, .secondary.is-underline:hover,.secondary.is-outline:hover,.icon-label,.button.secondary:not(.is-outline),.button.alt:not(.is-outline), .badge-inner.on-sale, .button.checkout, .single_add_to_cart_button{ background-color:#d70909; }/* Color */.secondary.is-underline,.secondary.is-link, .secondary.is-outline,.stars a.active, .star-rating:before, .woocommerce-page .star-rating:before,.star-rating span:before, .color-secondary{color: #d70909}/* Color !important */[data-text-color="secondary"]{color: #d70909!important;}/* Border */.secondary.is-outline:hover{border-color:#d70909}body{font-family:"Roboto", sans-serif}body{font-weight: 0}body{color: #1c1c1c}.nav > li > a {font-family:"Roboto", sans-serif;}.nav > li > a {font-weight: 0;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: "Roboto", sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2{font-weight: 0;}h1,h2,h3,h4,h5,h6,.heading-font{color: #1c1c1c;}.alt-font{font-family: "Roboto", sans-serif;}.alt-font{font-weight: 0!important;}.header:not(.transparent) .header-nav.nav > li > a {color: #ffffff;}.header:not(.transparent) .header-bottom-nav.nav > li > a{color: #000000;}.header:not(.transparent) .header-bottom-nav.nav > li > a:hover,.header:not(.transparent) .header-bottom-nav.nav > li.active > a,.header:not(.transparent) .header-bottom-nav.nav > li.current > a,.header:not(.transparent) .header-bottom-nav.nav > li > a.active,.header:not(.transparent) .header-bottom-nav.nav > li > a.current{color: #3399d2;}.header-bottom-nav.nav-line-bottom > li > a:before,.header-bottom-nav.nav-line-grow > li > a:before,.header-bottom-nav.nav-line > li > a:before,.header-bottom-nav.nav-box > li > a:hover,.header-bottom-nav.nav-box > li.active > a,.header-bottom-nav.nav-pills > li > a:hover,.header-bottom-nav.nav-pills > li.active > a{color:#FFF!important;background-color: #3399d2;}a{color: #000000;}a:hover{color: #3399d2;}.tagcloud a:hover{border-color: #3399d2;background-color: #3399d2;}.shop-page-title.featured-title .title-bg{ background-image: url(../../wp-content/uploads/2017/12/macbook-air-2017-01.jpg)!important;}@media screen and (min-width: 550px){.products .box-vertical .box-image{min-width: 300px!important;width: 300px!important;}}.absolute-footer, html{background-color: #f2f2f2}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}</style>
+</head>
+<body>
+<div layout:fragment="content">
+
+    <div class="shop-container">
+        <div class="post-180 product type-product status-publish has-post-thumbnail product_cat-tablet product_cat-tablet-beneve first instock sale shipping-taxable purchasable product-type-simple"
+             id="product-180">
+            <div class="product-container">
+                <div class="product-main">
+                    <div class="row content-row mb-0">
+
+                        <div class="product-gallery large-6 col">
+
+                            <div class="product-images relative mb-half has-hover woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images"
+                                 data-columns="4">
+
+                                <div class="badge-container is-larger absolute left top z-1" id="promotion_label">
+                                    <div class="callout badge badge-circle">
+                                        <div class="badge-inner secondary on-sale"><span class="onsale">Giảm giá</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-tools absolute top show-on-hover right z-3">
+                                </div>
+
+                                <figure class="woocommerce-product-gallery__wrapper product-gallery-slider slider slider-nav-small mb-half has-image-zoom"
+                                        data-flickity-options='{
+                "cellAlign": "center",
+                "wrapAround": true,
+                "autoPlay": false,
+                "prevNextButtons":true,
+                "adaptiveHeight": true,
+                "imagesLoaded": true,
+                "lazyLoad": 1,
+                "dragThreshold" : 15,
+                "pageDots": false,
+                "rightToLeft": false       }'>
+                                    <div  class="first slide woocommerce-product-gallery__image" id="main_photo"
+                                         data-thumb="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg">
+                                        <a
+                                                href="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg">
+                                            <img
+                                                alt="" class="attachment-shop_single size-shop_single wp-post-image"
+                                                data-caption=""
+                                                data-large_image="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg"
+                                                data-large_image_height="550"
+                                                data-large_image_width="550"
+                                                data-src="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg"
+                                                height="550"
+                                                sizes="(max-width: 550px) 100vw, 550px"
+                                                src="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg"
+                                                title="beneve-m1022h-02"
+                                                width="550"/></a></div>
+                                    <div id="slide_1" class="woocommerce-product-gallery__image image-list slide"
+                                         data-thumb="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg">
+                                        <a
+                                                href="../../wp-content/uploads/2017/12/beneve-m1022h-01.jpg"><img
+                                                alt="" class="attachment-shop_single size-shop_single"
+                                                data-caption=""
+                                                data-large_image="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg"
+                                                data-large_image_height="550"
+                                                data-large_image_width="550"
+                                                data-src="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01.jpg"
+                                                height="550"
+                                                sizes="(max-width: 550px) 100vw, 550px"
+                                                src="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg"
+                                                srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01.jpg 550w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-48x48.jpg 48w"
+                                                title="beneve-m1022h-01"
+                                                width="550"/></a></div>
+                                    <div id="slide_2" class="woocommerce-product-gallery__image image-list slide"
+                                         data-thumb="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-180x180.jpg">
+                                        <a
+                                                href="../../wp-content/uploads/2017/12/beneve-m1022h-05.jpg"><img
+                                                alt="" class="attachment-shop_single size-shop_single"
+                                                data-caption=""
+                                                data-large_image="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05.jpg"
+                                                data-large_image_height="550"
+                                                data-large_image_width="550"
+                                                data-src="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05.jpg"
+                                                height="550"
+                                                sizes="(max-width: 550px) 100vw, 550px"
+                                                src="../../wp-content/uploads/2017/12/beneve-m1022h-05.jpg"
+                                                srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05.jpg 550w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-48x48.jpg 48w"
+                                                title="beneve-m1022h-05"
+                                                width="550"/></a></div>
+                                    <div  id="slide_3" class="woocommerce-product-gallery__image image-list slide"
+                                         data-thumb="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-180x180.jpg">
+                                        <a
+                                                href="../../wp-content/uploads/2017/12/beneve-m1022h-04.jpg"><img
+                                                alt="" class="attachment-shop_single size-shop_single"
+                                                data-caption=""
+                                                data-large_image="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04.jpg"
+                                                data-large_image_height="550"
+                                                data-large_image_width="550"
+                                                data-src="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04.jpg"
+                                                height="550"
+                                                sizes="(max-width: 550px) 100vw, 550px"
+                                                src="../../wp-content/uploads/2017/12/beneve-m1022h-04.jpg"
+                                                srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04.jpg 550w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-48x48.jpg 48w"
+                                                title="beneve-m1022h-04"
+                                                width="550"/></a></div>
+                                    <div id="slide_4" class="woocommerce-product-gallery__image image-list slide"
+                                         data-thumb="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-180x180.jpg">
+                                        <a
+                                                href="../../wp-content/uploads/2017/12/beneve-m1022h-03.jpg"><img
+                                                alt="" class="attachment-shop_single size-shop_single"
+                                                data-caption=""
+                                                data-large_image="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03.jpg"
+                                                data-large_image_height="550"
+                                                data-large_image_width="550"
+                                                data-src="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03.jpg"
+                                                height="550"
+                                                sizes="(max-width: 550px) 100vw, 550px"
+                                                src="../../wp-content/uploads/2017/12/beneve-m1022h-03.jpg"
+                                                srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03.jpg 550w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-48x48.jpg 48w"
+                                                title="beneve-m1022h-03"
+                                                width="550"/></a></div>
+                                </figure>
+
+                                <div class="image-tools absolute bottom left z-3">
+                                    <a class="zoom-button button is-outline circle icon tooltip hide-for-small"
+                                       href="#product-zoom"
+                                       title="Zoom">
+                                        <i class="icon-expand"></i> </a>
+                                </div>
+                            </div>
+
+
+                            <div class="product-thumbnails thumbnails slider-no-arrows slider row row-small row-slider slider-nav-small small-columns-4"
+                                 data-flickity-options='{
+              "cellAlign": "left",
+              "wrapAround": false,
+              "autoPlay": false,
+              "prevNextButtons":true,
+              "asNavFor": ".product-gallery-slider",
+              "percentPosition": true,
+              "imagesLoaded": true,
+              "pageDots": false,
+              "rightToLeft": false,
+              "contain": true
+          }'
+                            >
+                                <div style="display:none" class="col is-nav-selected first"><a><img alt=""
+                                                                               class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                                               height="180"
+                                                                               sizes="(max-width: 180px) 100vw, 180px"
+                                                                               src="../../wp-content/uploads/2017/12/beneve-m1022h-02-180x180.jpg"
+                                                                               srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-02-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-02-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-02-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-02-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-02-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-02-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-02.jpg 550w"
+                                                                               width="180"/></a>
+                                </div>
+                                <div class="col"><a class="" title=""><img id="photo_1" alt="beneve-m1022h-01"
+                                                                           class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                           height="180"
+                                                                           sizes="(max-width: 180px) 100vw, 180px"
+                                                                           src="../../wp-content/uploads/2017/12/beneve-m1022h-01-180x180.jpg"
+                                                                           srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-01.jpg 550w"
+                                                                           title="beneve-m1022h-01"
+                                                                           width="180"/></a>
+                                </div>
+                                <div class="col"><a class="" title=""><img id="photo_2" alt="beneve-m1022h-05"
+                                                                           class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                           height="180"
+                                                                           sizes="(max-width: 180px) 100vw, 180px"
+                                                                           src="../../wp-content/uploads/2017/12/beneve-m1022h-05-180x180.jpg"
+                                                                           srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-05.jpg 550w"
+                                                                           title="beneve-m1022h-05"
+                                                                           width="180"/></a>
+                                </div>
+                                <div class="col"><a class="" title=""><img id="photo_3" alt="beneve-m1022h-04"
+                                                                           class="attachment-shop_thumbnail size-shop_thumbnail"
+                                                                           height="180"
+                                                                           sizes="(max-width: 180px) 100vw, 180px"
+                                                                           src="../../wp-content/uploads/2017/12/beneve-m1022h-04-180x180.jpg"
+                                                                           srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-04.jpg 550w"
+                                                                           title="beneve-m1022h-04"
+                                                                           width="180"/></a>
+                                </div>
+<!--                                <div class="col"><a class="" title=""><img id="photo_4" alt="beneve-m1022h-03"-->
+<!--                                                                           class="attachment-shop_thumbnail size-shop_thumbnail"-->
+<!--                                                                           height="180"-->
+<!--                                                                           sizes="(max-width: 180px) 100vw, 180px"-->
+<!--                                                                           src="../../wp-content/uploads/2017/12/beneve-m1022h-03-180x180.jpg"-->
+<!--                                                                           srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/beneve-m1022h-03.jpg 550w"-->
+<!--                                                                           title="beneve-m1022h-03"-->
+<!--                                                                           width="180"/></a>-->
+<!--                                </div>-->
+                            </div><!-- .product-thumbnails -->
+                        </div>
+
+                        <div class="product-info summary col-fit col entry-summary product-summary form-flat">
+
+                            <nav class="woocommerce-breadcrumb breadcrumbs" id="nav_product"><a
+                                    href="home">Trang chủ</a>
+                                <span class="divider">&#47;</span>
+                                <a href="category">Tablet</a>
+                                <span class="divider">&#47;</span>
+                                <a href="">Tablet Beneve</a>
+                            </nav>
+                            <h1 class="product-title entry-title" id="product_title">Máy Tính Bảng Beneve M1022H &#8211; Hàng Chính Hãng</h1>
+
+                            <div class="is-divider small"></div>
+                            <ul class="next-prev-thumbs is-small show-for-medium">
+                                <li class="prod-dropdown has-dropdown">
+                                    <a class="button icon is-outline circle"
+                                       href="../may-tinh-bang-cutepad-m7089-hang-chinh-hang/index.html"
+                                       rel="next">
+                                        <i class="icon-angle-left"></i> </a>
+                                    <div class="nav-dropdown">
+                                        <a href="../may-tinh-bang-cutepad-m7089-hang-chinh-hang/index.html"
+                                           title="Máy Tính Bảng cutePAD M7089 &#8211; Hàng Chính Hãng">
+                                            <img alt=""
+                                                 class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                 height="180"
+                                                 sizes="(max-width: 180px) 100vw, 180px"
+                                                 src="../../wp-content/uploads/2017/12/cutepad-m7089-01-180x180.jpg"
+                                                 srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01.jpg 550w"
+                                                 width="180"/></a>
+                                    </div>
+                                </li>
+                                <li class="prod-dropdown has-dropdown">
+                                    <a class="button icon is-outline circle"
+                                       href="../may-tinh-bang-samsung-galaxy-tab-e-t561-hang-chinh-hang/index.html"
+                                       rel="next">
+                                        <i class="icon-angle-right"></i> </a>
+                                    <div class="nav-dropdown">
+                                        <a href="../may-tinh-bang-samsung-galaxy-tab-e-t561-hang-chinh-hang/index.html"
+                                           title="Máy Tính Bảng Samsung Galaxy Tab E T561 &#8211; Hàng Chính Hãng">
+                                            <img alt=""
+                                                 class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                 height="180"
+                                                 sizes="(max-width: 180px) 100vw, 180px"
+                                                 src="../../wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-180x180.jpg"
+                                                 srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01.jpg 550w"
+                                                 width="180"/></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="woocommerce-product-rating">
+                                <div class="star-rating"><span style="width:80%"><strong class="rating">4.00</strong> trên 5 dựa trên <span
+                                        class="rating">1</span> đánh giá của khách hàng</span></div>
+                                <a class="woocommerce-review-link" href="#reviews" rel="nofollow">(<span
+                                        class="count">1</span> đánh giá của khách hàng)</a></div>
+
+                            <div class="price-wrapper">
+                                <p class="price product-page-price price-on-sale">
+                                    <del><span class="woocommerce-Price-amount amount" id="product_price">{price}<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></del>
+                                    <ins><span class="woocommerce-Price-amount amount" id="real_price">{price}<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins>
+                                </p>
+                            </div>
+                            <div class="product-short-description">
+                                <table id="tbl_parameter">
+                                    <tbody>
+                                    <tr>
+                                        <td width="283">{parameter}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <form class="variations_form cart" method="post" enctype='multipart/form-data'>
+                                <table class="variations" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="label"><label for="cbo_variant">Màu</label></td>
+                                            <td class="value">
+                                                <select id="cbo_variant" name="attribute_mau" data-attribute_name="attribute_mau" data-show_option_none="yes">
+                                                    <option value="">Chọn một tùy chọn</option>
+                                                    <option value="Vàng" >Vàng</option>
+                                                </select>
+<!--                                                <a class="reset_variations" href="#">Xóa</a></td>-->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+
+                            <form class="cart" enctype='multipart/form-data' method="post">
+                                <div class="quantity buttons_added">
+                                    <input class="minus button is-form"  id="minus_button" type="button" value="-"> <label
+                                        class="screen-reader-text">Số lượng</label>
+                                    <input readonly id="product_quantity" class="input-text qty text" inputmode="numeric"
+                                           max="5" min="1" name="quantity" pattern="[0-9]*" size="4" step=""
+                                           title="SL"
+                                           type="number" value="1"/>
+                                    <input class="plus button is-form" id="plus_button" type="button" value="+"></div>
+
+                                <button style="color: white" id="add_cart" class="single_add_to_cart_button  alt" name="add-to-cart" type="button"
+                                        value="180">Thêm vào giỏ
+                                </button>
+
+                            </form>
+
+
+                            <div class="product_meta">
+
+
+                                <span class="sku_wrapper">Mã: <span class="sku">beneve-01</span></span>
+
+
+                                <span class="posted_in">Danh mục: <a href="../../danh-muc/tablet/index.html" rel="tag">Tablet</a>, <a
+                                        href="../../danh-muc/tablet/tablet-beneve/index.html"
+                                        rel="tag">Tablet Beneve</a></span>
+
+
+                            </div>
+
+                        </div><!-- .summary -->
+
+                        <div class="mfp-hide" id="product-sidebar">
+                            <div class="sidebar-inner">
+                                <div class="hide-for-off-canvas" style="width:100%">
+                                    <ul class="next-prev-thumbs is-small nav-right text-right">
+                                        <li class="prod-dropdown has-dropdown">
+                                            <a class="button icon is-outline circle"
+                                               href="../may-tinh-bang-cutepad-m7089-hang-chinh-hang/index.html"
+                                               rel="next">
+                                                <i class="icon-angle-left"></i> </a>
+                                            <div class="nav-dropdown">
+                                                <a href="../may-tinh-bang-cutepad-m7089-hang-chinh-hang/index.html"
+                                                   title="Máy Tính Bảng cutePAD M7089 &#8211; Hàng Chính Hãng">
+                                                    <img alt=""
+                                                         class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                         height="180"
+                                                         sizes="(max-width: 180px) 100vw, 180px"
+                                                         src="../../wp-content/uploads/2017/12/cutepad-m7089-01-180x180.jpg"
+                                                         srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/cutepad-m7089-01.jpg 550w"
+                                                         width="180"/></a>
+                                            </div>
+                                        </li>
+                                        <li class="prod-dropdown has-dropdown">
+                                            <a class="button icon is-outline circle"
+                                               href="../may-tinh-bang-samsung-galaxy-tab-e-t561-hang-chinh-hang/index.html"
+                                               rel="next">
+                                                <i class="icon-angle-right"></i> </a>
+                                            <div class="nav-dropdown">
+                                                <a href="../may-tinh-bang-samsung-galaxy-tab-e-t561-hang-chinh-hang/index.html"
+                                                   title="Máy Tính Bảng Samsung Galaxy Tab E T561 &#8211; Hàng Chính Hãng">
+                                                    <img alt=""
+                                                         class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                         height="180"
+                                                         sizes="(max-width: 180px) 100vw, 180px"
+                                                         src="../../wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-180x180.jpg"
+                                                         srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/ss-galaxy-tab-et561-01.jpg 550w"
+                                                         width="180"/></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <aside class="widget widget_nav_menu" id="nav_menu-3"><span
+                                        class="widget-title shop-sidebar">Danh mục sản phẩm</span>
+                                    <div class="is-divider small"></div>
+                                    <div class="menu-menu-chinh-container">
+                                        <ul class="menu" id="menu-menu-chinh-1">
+                                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-446">
+                                                <a class="menu-image-title-after menu-image-not-hovered"
+                                                   href="../../danh-muc/dien-thoai/index.html"><img alt=""
+                                                                                                    class="menu-image menu-image-title-after"
+                                                                                                    height="24"
+                                                                                                    sizes="(max-width: 24px) 100vw, 24px"
+                                                                                                    src="../../wp-content/uploads/2017/12/smartphone-1-24x24.png"
+                                                                                                    srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1.png 64w"
+                                                                                                    width="24"/><span
+                                                        class="menu-image-title">Điện thoại</span></a></li>
+                                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-449">
+                                                <a class="menu-image-title-after menu-image-not-hovered"
+                                                   href="../../danh-muc/laptop/index.html"><img alt=""
+                                                                                                class="menu-image menu-image-title-after"
+                                                                                                height="24"
+                                                                                                sizes="(max-width: 24px) 100vw, 24px"
+                                                                                                src="../../wp-content/uploads/2017/12/laptop-2-24x24.png"
+                                                                                                srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/laptop-2-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/laptop-2-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/laptop-2-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/laptop-2.png 64w"
+                                                                                                width="24"/><span
+                                                        class="menu-image-title">Laptop</span></a></li>
+                                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-447">
+                                                <a class="menu-image-title-after menu-image-not-hovered"
+                                                   href="../../danh-muc/dien-thoai/apple/index.html"><img alt=""
+                                                                                                          class="menu-image menu-image-title-after"
+                                                                                                          height="24"
+                                                                                                          sizes="(max-width: 24px) 100vw, 24px"
+                                                                                                          src="../../wp-content/uploads/2017/12/apple-24x24.png"
+                                                                                                          srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/apple-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/apple-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/apple-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/apple.png 64w"
+                                                                                                          width="24"/><span
+                                                        class="menu-image-title">Apple</span></a></li>
+                                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current_page_parent menu-item-448">
+                                                <a class="menu-image-title-after menu-image-not-hovered"
+                                                   href="../../danh-muc/dien-thoai/samsung/index.html"><img alt=""
+                                                                                                            class="menu-image menu-image-title-after"
+                                                                                                            height="24"
+                                                                                                            sizes="(max-width: 24px) 100vw, 24px"
+                                                                                                            src="../../wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model-24x24.png"
+                                                                                                            srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model.png 64w"
+                                                                                                            width="24"/><span
+                                                        class="menu-image-title">Samsung</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-592">
+                                                <a class="menu-image-title-after menu-image-not-hovered"
+                                                   href="../../tablet/index.html"><img alt=""
+                                                                                       class="menu-image menu-image-title-after"
+                                                                                       height="24"
+                                                                                       sizes="(max-width: 24px) 100vw, 24px"
+                                                                                       src="../../wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1-24x24.png"
+                                                                                       srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1.png 64w"
+                                                                                       width="24"/><span
+                                                        class="menu-image-title">Tablet</span></a></li>
+                                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-450">
+                                                <a class="menu-image-title-after menu-image-not-hovered"
+                                                   href="../../danh-muc/phu-kien/index.html"><img alt=""
+                                                                                                  class="menu-image menu-image-title-after"
+                                                                                                  height="24"
+                                                                                                  sizes="(max-width: 24px) 100vw, 24px"
+                                                                                                  src="../../wp-content/uploads/2017/12/headset-1-24x24.png"
+                                                                                                  srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/headset-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/headset-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/headset-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/headset-1.png 64w"
+                                                                                                  width="24"/><span
+                                                        class="menu-image-title">Phụ kiện</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-504">
+                                                <a class="menu-image-title-after menu-image-not-hovered"
+                                                   href="../../khuyen-mai/index.html"><img alt=""
+                                                                                           class="menu-image menu-image-title-after"
+                                                                                           height="24"
+                                                                                           sizes="(max-width: 24px) 100vw, 24px"
+                                                                                           src="../../wp-content/uploads/2017/12/gift-1-24x24.png"
+                                                                                           srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/gift-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/gift-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/gift-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/gift-1.png 64w"
+                                                                                           width="24"/><span
+                                                        class="menu-image-title">Khuyến mãi</span></a></li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                                <aside class="widget woocommerce widget_products" id="woocommerce_products-2"><span
+                                        class="widget-title shop-sidebar">Sản phẩm</span>
+                                    <div class="is-divider small"></div>
+                                    <ul class="product_list_widget">
+                                        <li>
+                                            <a href="../op-lung-deo-cho-iphone-6-plus-6s-plus-gau-kem-thu-noi/index.html">
+                                                <img alt=""
+                                                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                     height="180"
+                                                     sizes="(max-width: 180px) 100vw, 180px"
+                                                     src="../../wp-content/uploads/2017/12/op-deo-hinh-thu-01-180x180.jpg"
+                                                     srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01.jpg 550w"
+                                                     width="180"/> <span
+                                                    class="product-title">Ốp Lưng Dẻo Cho iPhone 6 Plus/6s Plus - Gấu Kèm Thú Nổi</span>
+                                            </a>
+                                            <del><span class="woocommerce-Price-amount amount">130,000&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">&#8363;</span></span></del>
+                                            <ins><span class="woocommerce-Price-amount amount">90,000&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins>
+                                        </li>
+
+                                        <li>
+                                            <a href="../bao-da-ipad-pro-10-5-inch-uag-metropolis-hang-chinh-hang/index.html">
+                                                <img alt=""
+                                                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                     height="180"
+                                                     sizes="(max-width: 180px) 100vw, 180px"
+                                                     src="../../wp-content/uploads/2017/12/uag-ipad-01-180x180.jpg"
+                                                     srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01.jpg 550w"
+                                                     width="180"/> <span
+                                                    class="product-title">Bao Da iPad Pro 10.5 inch UAG Metropolis - Hàng Chính Hãng</span>
+                                            </a>
+                                            <span class="woocommerce-Price-amount amount">1,034,000&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">&#8363;</span></span></li>
+
+                                        <li>
+                                            <a href="../thiet-bi-ket-noi-bluetooth-voi-dien-thoai-kashimura-bl-40-3-0/index.html">
+                                                <img alt=""
+                                                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                     height="180"
+                                                     sizes="(max-width: 180px) 100vw, 180px"
+                                                     src="../../wp-content/uploads/2017/12/Kashimura-BL-40-01-180x180.jpg"
+                                                     srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01.jpg 550w"
+                                                     width="180"/> <span
+                                                    class="product-title">Thiết Bị Kết Nối Bluetooth Với Điện Thoại Kashimura BL-40 3.0</span>
+                                            </a>
+                                            <span class="woocommerce-Price-amount amount">749,000&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">&#8363;</span></span></li>
+
+                                        <li>
+                                            <a href="../295/index.html">
+                                                <img alt=""
+                                                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                     height="180"
+                                                     sizes="(max-width: 180px) 100vw, 180px"
+                                                     src="../../wp-content/uploads/2017/12/Blaster-E3-01-180x180.jpg"
+                                                     srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01.jpg 550w"
+                                                     width="180"/> <span
+                                                    class="product-title">HD Headphone Amplifier Creative Sound Blaster E3 - Hàng Chính Hãng</span>
+                                            </a>
+                                            <del><span class="woocommerce-Price-amount amount">3,550,000&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">&#8363;</span></span></del>
+                                            <ins><span class="woocommerce-Price-amount amount">3,245,000&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins>
+                                        </li>
+
+                                        <li>
+                                            <a href="../may-nghe-nhac-di-dong-astell-kern-ak-320-xam/index.html">
+                                                <img alt=""
+                                                     class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image"
+                                                     height="180"
+                                                     sizes="(max-width: 180px) 100vw, 180px"
+                                                     src="../../wp-content/uploads/2017/12/astell-kern-ak320-01-180x180.jpg"
+                                                     srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01.jpg 550w"
+                                                     width="180"/> <span
+                                                    class="product-title">Máy Nghe Nhạc Di Động Astell & Kern AK 320 Xám</span>
+                                            </a>
+                                            <del><span class="woocommerce-Price-amount amount">47,566,000&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">&#8363;</span></span></del>
+                                            <ins><span class="woocommerce-Price-amount amount">43,279,000&nbsp;<span
+                                                    class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins>
+                                        </li>
+                                    </ul>
+                                </aside>
+                                <aside class="widget flatsome_recent_posts" id="flatsome_recent_posts-3"><span
+                                        class="widget-title shop-sidebar">Bài viết mới nhất</span>
+                                    <div class="is-divider small"></div>
+                                    <ul>
+
+                                        <li class="recent-blog-posts-li">
+                                            <div class="flex-row recent-blog-posts align-top pt-half pb-half">
+                                                <div class="flex-col mr-half">
+                                                    <div class="badge post-date  badge-outline">
+                                                        <div class="badge-inner bg-fill" post-date-day
+                                                             style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/hinh-nen-mate-10-pro--150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">
+                                                            <span>07</span><br>
+                                                            <span class="post-date-month is-xsmall">Th12</span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .flex-col -->
+                                                <div class="flex-col flex-grow">
+                                                    <a href="../../tron-bo-hinh-nen-huawei-mate-10-dep-mien-che-cho-moi-smartphone/index.html"
+                                                       title="Trọn bộ hình nền Huawei Mate 10 đẹp &#8220;miễn chê&#8221; cho mọi smartphone">Trọn
+                                                        bộ hình nền Huawei Mate 10 đẹp &#8220;miễn chê&#8221; cho mọi
+                                                        smartphone</a>
+                                                    <span class="post_comments oppercase op-7 block is-xsmall"><a
+                                                            href="../../tron-bo-hinh-nen-huawei-mate-10-dep-mien-che-cho-moi-smartphone/index.html#respond"></a></span>
+                                                </div>
+                                            </div><!-- .flex-row -->
+                                        </li>
+
+
+                                        <li class="recent-blog-posts-li">
+                                            <div class="flex-row recent-blog-posts align-top pt-half pb-half">
+                                                <div class="flex-col mr-half">
+                                                    <div class="badge post-date  badge-outline">
+                                                        <div class="badge-inner bg-fill" post-date-day
+                                                             style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/Nokia-6-TA-1054-cover-150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">
+                                                            <span>07</span><br>
+                                                            <span class="post-date-month is-xsmall">Th12</span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .flex-col -->
+                                                <div class="flex-col flex-grow">
+                                                    <a href="../../ro-ri-thong-tin-nokia-6-2018-man-hinh-tran-vien-ti-le-189-snapdragon-6xx-ram-4gb/index.html"
+                                                       title="Rò rỉ thông tin Nokia 6 (2018): Màn hình tràn viền, tỉ lệ 18:9, Snapdragon 6XX, RAM 4GB">Rò
+                                                        rỉ thông tin Nokia 6 (2018): Màn hình tràn viền, tỉ lệ 18:9,
+                                                        Snapdragon 6XX, RAM
+                                                        4GB</a>
+                                                    <span class="post_comments oppercase op-7 block is-xsmall"><a
+                                                            href="../../ro-ri-thong-tin-nokia-6-2018-man-hinh-tran-vien-ti-le-189-snapdragon-6xx-ram-4gb/index.html#respond"></a></span>
+                                                </div>
+                                            </div><!-- .flex-row -->
+                                        </li>
+
+
+                                        <li class="recent-blog-posts-li">
+                                            <div class="flex-row recent-blog-posts align-top pt-half pb-half">
+                                                <div class="flex-col mr-half">
+                                                    <div class="badge post-date  badge-outline">
+                                                        <div class="badge-inner bg-fill" post-date-day
+                                                             style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/meizu-note-8-fptshop-150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">
+                                                            <span>07</span><br>
+                                                            <span class="post-date-month is-xsmall">Th12</span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .flex-col -->
+                                                <div class="flex-col flex-grow">
+                                                    <a href="../../meizu-note-8-bat-ngo-xuat-hien-trong-dien-mao-dep-hoan-hao/index.html"
+                                                       title="Meizu Note 8 bất ngờ xuất hiện trong diện mạo đẹp hoàn hảo">Meizu
+                                                        Note 8 bất
+                                                        ngờ xuất hiện trong diện mạo đẹp hoàn hảo</a>
+                                                    <span class="post_comments oppercase op-7 block is-xsmall"><a
+                                                            href="../../meizu-note-8-bat-ngo-xuat-hien-trong-dien-mao-dep-hoan-hao/index.html#respond"></a></span>
+                                                </div>
+                                            </div><!-- .flex-row -->
+                                        </li>
+
+
+                                        <li class="recent-blog-posts-li">
+                                            <div class="flex-row recent-blog-posts align-top pt-half pb-half">
+                                                <div class="flex-col mr-half">
+                                                    <div class="badge post-date  badge-outline">
+                                                        <div class="badge-inner bg-fill" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/danh-gia-asus-zenfone-4-max-pro-pin-sieu-trau-kha-bat-ngo-ve-camera-2-150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">
+                                                            <span>07</span><br>
+                                                            <span class="post-date-month is-xsmall">Th12</span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .flex-col -->
+                                                <div class="flex-col flex-grow">
+                                                    <a href="../../tai-sao-nen-mua-phien-ban-thu-nho-asus-zenfone-4-max/index.html"
+                                                       title="Tại sao nên mua “phiên bản thu nhỏ” Asus Zenfone 4 Max?">Tại
+                                                        sao nên mua “phiên
+                                                        bản thu nhỏ” Asus Zenfone 4 Max?</a>
+                                                    <span class="post_comments oppercase op-7 block is-xsmall"><a
+                                                            href="../../tai-sao-nen-mua-phien-ban-thu-nho-asus-zenfone-4-max/index.html#respond"></a></span>
+                                                </div>
+                                            </div><!-- .flex-row -->
+                                        </li>
+
+
+                                        <li class="recent-blog-posts-li">
+                                            <div class="flex-row recent-blog-posts align-top pt-half pb-half">
+                                                <div class="flex-col mr-half">
+                                                    <div class="badge post-date  badge-outline">
+                                                        <div class="badge-inner bg-fill" post-date-day
+                                                             style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/Nhung-dieu-tuyet-voi-se-co-tren-smartphone-android-cao-cap-2018-4-150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">
+                                                            <span>07</span><br>
+                                                            <span class="post-date-month is-xsmall">Th12</span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .flex-col -->
+                                                <div class="flex-col flex-grow">
+                                                    <a href="../../nhung-dieu-tuyet-voi-se-xuat-hien-tren-smartphone-android-dinh-cao-2018/index.html"
+                                                       title="Những điều tuyệt vời sẽ xuất hiện trên smartphone Android đỉnh cao 2018">Những
+                                                        điều
+                                                        tuyệt vời sẽ xuất hiện trên smartphone Android đỉnh cao 2018</a>
+                                                    <span class="post_comments oppercase op-7 block is-xsmall"><a
+                                                            href="../../nhung-dieu-tuyet-voi-se-xuat-hien-tren-smartphone-android-dinh-cao-2018/index.html#respond"></a></span>
+                                                </div>
+                                            </div><!-- .flex-row -->
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </div><!-- .sidebar-inner -->
+                        </div>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <div class="container">
+                        <div class="product-page-sections">
+                            <div class="product-section">
+                                <div class="row">
+                                    <div class="large-2 col pb-0 mb-0">
+                                        <h5 class="uppercase mt">Mô tả</h5>
+                                    </div>
+
+                                    <div class="large-10 col pb-0 mb-0">
+                                        <div class="panel entry-content">
+
+
+                                            <h3 class="product-table-title"><strong>THÔNG TIN CHI TIẾT</strong></h3>
+                                            <div class="white-panel">
+                                                <div class="attribute-table multi-table"></div>
+                                                <table cellspacing="0"
+                                                       class="table table-bordered table-detail table-striped"
+                                                       id="tbl_detail">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>{colum 1}</td>
+                                                        <td class="last">{colum 2}</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h3></h3>
+                                            <h3 class="product-table-title"><strong>MÔ TẢ SẢN PHẨM</strong></h3>
+                                            <div class="white-panel" id="information-detail">
+                                                <div class="product-description">
+                                                    <div class="product-content-detail">
+                                                        <div class="content js-content expand" id="gioi-thieu">
+                                                            <h5>Thiết kế sang trọng, tinh tế</h5>
+                                                            <p><strong>Máy Tính Bảng Beneve M1022H</strong> được thiết
+                                                                kế khá tỉ mỉ với bốn cạnh bo tròn, màu sắc sang trọng và
+                                                                tinh tế. Sản phẩm có trọng lượng nhẹ giúp bạn dễ dàng
+                                                                cầm hay vừa di chuyển vừa sử dụng, xem phim lâu không
+                                                                mỏi tay, thích hợp với nhu cầu công việc và giải trí.
+                                                            </p>
+                                                            <h5>Màn hình 10.1 inch hiển thị rõ nét</h5>
+                                                            <p>Máy Tính Bảng Beneve M1022H với độ phân giải màn hình cao
+                                                                800 x 1280 pixels, cho hình ảnh hiển thị trở nên sống
+                                                                động và tinh tế hơn các dòng máy tính bảng thông thường
+                                                                khác gấp nhiều lần. Những phút giây thư giãn với máy
+                                                                tính bảng sẽ trở nên hào hứng và hấp dẫn hơn bao giờ
+                                                                hết. Không chỉ các video, hình ảnh được lưu trữ trong
+                                                                máy, mà các trò chơi hay các bộ phim trực tuyến chất
+                                                                lượng cao khi truy cập internet bằng wifi, 3G hay GPRS
+                                                                cũng trở nên trung thực và sống động hơn trong từng
+                                                                chuyển động.</p>
+                                                            <h5>Cấu hình mạnh, chạy ứng dụng mượt mà</h5>
+                                                            <p>Sản phẩm sử dụng hệ điều hành Windows 10 vận hành các ứng
+                                                                dụng nhanh chóng hơn, hiệu quả hơn. Kết hợp cùng bộ vi
+                                                                xử lý Intel Cherry-Trail Z8350 1.44-1.84 GHz Quad, máy
+                                                                tính bảng Beneve sẽ cho bạn chạy hàng loạt các ứng dụng
+                                                                cùng một thời điểm mà không lo bị chậm hay đứng máy. Màu
+                                                                sắc hiển thị mang đến cho bạn không gian làm việc trẻ
+                                                                trung hơn, tươi mới hơn, máy còn kết nối với kho ứng
+                                                                dụng trực tuyến khổng lồ, cho bạn tha hồ lựa chọn, tải
+                                                                về và cài đặt các ứng dụng mình yêu thích.</p>
+                                                            <h5>Kết hợp với bàn phím rời</h5>
+                                                            <p>Benever M1022H thiết kế mỏng nhưng chắc chắn có kèm theo
+                                                                bàn phím. Bàn phím được thiết kế đồng bộ hài hòa làm cho
+                                                                tổng thể M1022H như một laptop thực thụ. Trên bàn phím
+                                                                có cổng USB dễ dàng kết nối với thiết bị ngoại vi khác.
+                                                                Với cổng HDMI trên máy, khi cần bạn có thể tháo rời bàn
+                                                                phím dùng như 1 máy tính bảng chuyên dụng, M1022H dễ
+                                                                dàng hỗ trợ người dùng trong việc trình chiếu ngoài ra
+                                                                máy còn hỗ trợ gắn thẻ nhớ tối đa 32GB bạn có thể tha hồ
+                                                                lưu trữ dữ liệu, hình ảnh video clip, film.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-section">
+                                <div class="row">
+                                    <div class="large-2 col pb-0 mb-0">
+                                        <h5 class="uppercase mt">Đánh giá (1)</h5>
+                                    </div>
+
+                                    <div class="large-10 col pb-0 mb-0">
+                                        <div class="panel entry-content">
+                                            <div class="row" id="reviews">
+                                                <div class="col large-12" id="comments">
+                                                    <h3 class="normal">1 đánh giá cho <span>Máy Tính Bảng Beneve M1022H &#8211; Hàng Chính Hãng</span>
+                                                    </h3>
+                                                    <ol class="commentlist">
+                                                        <li class="review-item comment byuser comment-author-admin bypostauthor even thread-even depth-1"
+                                                            id="li-comment-3" style="display: none">
+                                                            <div class="comment_container review-item flex-row align-top"
+                                                                 id="comment-3">
+                                                                <div class="flex-col">
+                                                                    <img alt=''
+                                                                         class='avatar avatar-60 photo'
+                                                                         height='60'
+                                                                         src="https://0.gravatar.com/avatar/c6b3d31539b5f51e68dc08bbde85fcec?s=60&amp;d=mm&amp;r=g" srcset='http://0.gravatar.com/avatar/c6b3d31539b5f51e68dc08bbde85fcec?s=120&#038;d=mm&#038;r=g 2x'
+                                                                         width='60'/></div>
+
+                                                                <div class="comment-text flex-col flex-grow">
+
+                                                                    <div class="star-rating" style="display: block">
+                                                                        <span class="score-rating" style="width:80%">Được xếp hạng <strong
+                                                                            class="rating">4</strong> 5 sao</span>
+                                                                    </div>
+                                                                    <p class="meta">
+                                                                        <strong class="woocommerce-review__author">Admin</strong>
+                                                                        <span class="woocommerce-review__dash">&ndash;</span>
+                                                                        <time class="woocommerce-review__published-date"
+                                                                              datetime="2017-12-12T14:54:25+00:00">12
+                                                                            Tháng Mười Hai, 2017
+                                                                        </time>
+                                                                    </p>
+
+                                                                    <div class="description"><p>Rất hữu dụng</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li><!-- #comment-## -->
+                                                    </ol>
+                                                </div>
+
+
+                                                <div class="large-12 col" id="review_form_wrapper">
+                                                    <div class="col-inner" id="review_form">
+                                                        <div class="review-form-inner has-border">
+                                                            <div class="comment-respond" id="respond">
+                                                                <h3 class="comment-reply-title" id="reply-title">Thêm
+                                                                    đánh giá <small><a href="index.html#respond"
+                                                                                       id="cancel-comment-reply-link"
+                                                                                       rel="nofollow"
+                                                                                       style="display:none;">Hủy</a></small>
+                                                                </h3>
+<!--                                                                <form action="http://mauweb.monamedia.net/fptshop/wp-comments-post.php"-->
+<!--                                                                      class="comment-form" id="commentform"-->
+<!--                                                                      method="post" novalidate>-->
+                                                                    <div class="comment-form-rating"><label
+                                                                            for="rating">Đánh giá của bạn</label><select
+                                                                            aria-required="true" id="rating"
+                                                                            name="rating" required>
+                                                                        <option value="">Xếp hạng&hellip;</option>
+                                                                        <option value="5">Rất tốt</option>
+                                                                        <option value="4">Tốt</option>
+                                                                        <option value="3">Trung bình</option>
+                                                                        <option value="2">Không tệ</option>
+                                                                        <option value="1">Rất tệ</option>
+                                                                    </select></div>
+                                                                    <p class="comment-form-comment"><label
+                                                                            for="txt_description">Nhận xét của bạn <span
+                                                                            class="required">*</span></label><textarea
+                                                                            aria-required="true" cols="45" id="txt_description"
+                                                                            name="comment" required
+                                                                            rows="8"></textarea></p>
+                                                                    <p class="comment-form-author"><label for="txt_author">Tên
+                                                                        <span class="required">*</span></label> <input
+                                                                            aria-required="true" id="txt_author" name="author"
+                                                                            required size="30" type="text"
+                                                                            value=""/></p>
+                                                                    <p class="comment-form-email"><label for="txt_email">Email
+                                                                        <span class="required">*</span></label> <input
+                                                                            aria-required="true" id="txt_email" name="email"
+                                                                            required size="30" type="email"
+                                                                            value=""/></p>
+                                                                    <p class="form-submit"><input class="button"
+                                                                                                  id="send_comment"
+                                                                                                  name="submit"
+                                                                                                  type="submit"
+                                                                                                  value="Gửi đi"/>
+                                                                        <input id='comment_post_ID' name='comment_post_ID'
+                                                                               type='hidden' value='180'/>
+                                                                        <input id='comment_parent' name='comment_parent'
+                                                                               type='hidden' value='0'/>
+                                                                    </p>
+<!--                                                                </form>-->
+                                                            </div><!-- #respond -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="related related-products-wrapper product-section">
+
+                            <h3 class="product-section-title container product-section-title-related pt-half pb-half uppercase">
+                                Sản phẩm tương tự </h3>
+
+
+                            <div id="phone-product" class="row large-columns-4 medium-columns- small-columns-2 row-collapse slider row-slider slider-nav-simple slider-nav-push"
+                                 data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : 3000}'>
+                                <div class="col product-item" style="display: none">
+                                    <div class="col-inner">
+                                        <div class="badge-container absolute left top z-1"  >
+                                        </div>
+                                        <div class="product-small box has-hover box-normal box-text-bottom">
+                                            <div class="box-image">
+                                                <div class="">
+                                                    <a class="link-product" href="san-pham/dien-thoai-blackberry-keyone-hang-chinh-hang/index.html">
+                                                        <img alt=""
+                                                             class="show-on-hover absolute fill hide-for-small back-image"
+                                                             height="300"
+                                                             sizes="(max-width: 300px) 100vw, 300px"
+                                                             src="wp-content/uploads/2017/12/bb-key-one-04-300x300.jpg"
+                                                             srcset=""
+                                                             width="300"/>
+                                                        <img
+                                                                alt=""
+                                                                class="attachment-original size-original wp-post-image"
+                                                                height="550"
+                                                                sizes="(max-width: 550px) 100vw, 550px"
+                                                                src="wp-content/uploads/2017/12/bb-key-one-01.jpg"
+                                                                srcset=""
+                                                                width="550"/>
+                                                    </a>
+                                                </div>
+                                                <div class="image-tools z-top top right show-on-hover">
+                                                </div>
+                                                <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+                                                </div>
+                                            </div><!-- box-image -->
+
+                                            <div class="box-text text-left" style="padding:20px 20px 20px 20px;">
+                                                <div class="title-wrapper"><p class="name product-title"><a  class="link-product"
+                                                                                                             href="san-pham/dien-thoai-blackberry-keyone-hang-chinh-hang/index.html">Điện
+                                                    Thoại BlackBerry KEYone &#8211; Hàng Chính Hãng</a></p></div>
+                                                <div class="price-wrapper">
+                                                        <span class="price"><span
+                                                                class="woocommerce-Price-amount amount">14,990,000&nbsp;<span
+                                                                class="woocommerce-Price-currencySymbol">&#8363;</span></span></span>
+                                                </div>
+                                                <p class="box-excerpt is-small">
+                                                <ul>
+                                                    <li>Chính hãng, Nguyên seal, Mới 100%</li>
+                                                    <li>Miễn phí giao hàng toàn quốc</li>
+                                                    <li>Thiết kế: Nguyên khối</li>
+                                                    <li>Màn hình 4.5 inch, độ phân giải 1620x 1080 pixels</li>
+                                                    <li>Camera Trước/Sau: 8MP/12MP</li>
+                                                    <li>CPU: Qualcomm® Snapdragon™ 625 Octa-Core 2.0 GHz</li>
+                                                    <li>Bộ Nhớ 32GB</li>
+                                                    <li>RAM 3GB</li>
+                                                </ul>
+                                                </p>
+                                            </div><!-- box-text -->
+                                        </div><!-- box -->
+                                    </div><!-- .col-inner -->
+                                </div><!-- col -->
+                            </div>
+                        </div>
+
+                    </div><!-- container -->
+                </div><!-- product-footer -->
+            </div>
+        </div>
+        </div>
+
+    <script src='js/product-detail.js' type='text/javascript'></script>
+    <script>
+        //jQuery(document).ready(function () {
+            loadData();
+<!--            loadSimilarProduct();-->
+        //});
+    </script>
+    <script>
+    var wc_single_product_params = {"i18n_required_rating_text":"Vui l\u00f2ng ch\u1ecdn m\u1ed9t m\u1ee9c \u0111\u00e1nh gi\u00e1","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"","photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":""};
+    /* ]]> */
+    </script>
+
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/single-product.minc169.js?ver=3.2.6'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js?ver=2.1.4'></script>
+
+    <script type='text/javascript' src='wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-searchccfb.js?ver=3.4.2'></script>
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var flatsomeVars = {"ajaxurl":"http:\/\/mauweb.monamedia.net\/fptshop\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"70"};
+/* ]]> */
+
+</script>
+    <script src='wp-content/themes/flatsome/assets/js/flatsomeccfb.js?ver=3.4.2' type='text/javascript'></script>
+    <script src='wp-content/themes/flatsome/assets/js/woocommerceccfb.js?ver=3.4.2' type='text/javascript'></script>
+    <script src='wp-includes/js/wp-embed.minca80.js?ver=4.9.15' type='text/javascript'></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<style>
+#profile-table {
+  width: 100%;
+  border: 1px solid;
+}
+
+
+</style>
+<header class="header has-sticky sticky-jump" id="header" th:fragment="header">
+    <div class="header-wrapper">
+        <div class="header-main nav-dark" id="masthead">
+            <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+                <!-- Logo -->
+                <div class="flex-col logo" id="logo">
+                    <!-- Header logo -->
+                    <a href="/home" rel="home" title="fptshop - Một trang web mới sử dụng WordPress">
+                        <img     alt="fptshop" class="header_logo header-logo" height="58"
+                             src="wp-content/uploads/2018/01/logo-mona-fpt.png" width="151"/><img alt="fptshop"
+                                                                                                  class="header-logo-dark"
+                                                                                                  height="58"
+                                                                                                  src="wp-content/uploads/2018/01/logo-mona-fpt.png"
+                                                                                                   width="151"/></a>
+                </div>
+
+                <!-- Mobile Left Elements -->
+                <div class="flex-col show-for-medium flex-left">
+                    <ul class="mobile-nav nav nav-left ">
+                        <li class="nav-icon has-icon">
+                            <a aria-controls="main-menu" aria-expanded="false" class="is-small"
+                               data-bg="main-menu-overlay"
+                               data-color="" data-open="#main-menu" data-pos="left" href="#">
+
+                                <i class="icon-menu"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Left Elements -->
+                <div class="flex-col hide-for-medium flex-left
+            flex-grow">
+                    <ul class="header-nav header-nav-main nav nav-left ">
+                        <li class="header-search-form search-form html relative has-icon">
+                            <div class="header-search-form-wrapper">
+                                <div class="searchform-wrapper ux-search-box relative form- is-normal">
+                                    <div  action="" id="search_form" class="searchform"  role="search">
+                                        <div class="flex-row relative">
+                                            <div class="flex-col flex-grow">
+                                                <table class="table_form" style="margin-top: 7px;">
+                                                    <tr>
+                                                        <style>
+                                                            #btn-search:hover{
+                                                                      background-color: red !important;
+                                                                    }
+                                                             .table_form tr td{
+                                                                border-bottom: none
+                                                             }
+
+                                                        </style>
+                                                        <td><input style="width: 522px; border-bottom: 1px solid black !important;" id="id_name" type="text" maxlength="50; " placeholder="Nhập tên điện thoại, máy tính, phụ kiện ... cần tìm" ></td>
+                                                        <td><a ><button id="btn-search"  style="background-color: #d70909; color: white; " value="Search">Search</button></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="live-search-results text-left z-top"></div>
+                                    </div>
+                                    <div class="live-search-results text-left z-top">
+                                        <div class="autocomplete-suggestions" id="div_search">
+                                            <a class="autocomplete-suggestion search-item" style="display:none" data-index="0">
+                                                <img class="search-image" src="">
+                                                <div class="search-name"></div>
+                                                <span class="search-price">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right Elements -->
+                <div class="flex-col hide-for-medium flex-right">
+                    <ul class="header-nav header-nav-main nav nav-right ">
+
+                        <li class="cart-item has-icon has-dropdown">
+                            <a class="header-cart-link is-small" href="cart" title="Giỏ hàng">
+
+
+<span class="header-cart-title">
+<span class="header-cart-title">
+   Giỏ hàng   /      <span class="cart-price"><span class="woocommerce-Price-amount amount" id="total_price">0&nbsp;<span
+        class="woocommerce-Price-currencySymbol">&#8363;</span></span></span>
+  </span>
+
+                                <span class="cart-icon image-icon">
+    <strong>0</strong>
+  </span>
+                            </a>
+
+                            <ul class="nav-dropdown nav-dropdown-default">
+                                <li class="html widget_shopping_cart">
+                                <li class="html widget_shopping_cart">
+                                    <div class="widget_shopping_cart_content">
+                                        <ul id="cart_List" class="woocommerce-mini-cart cart_list product_list_widget mini-cart">
+<!--                                            <li class="woocommerce-mini-cart-item mini_cart_item">-->
+<!--                                                <a href="" class="remove remove_from_cart_button" aria-label="Xóa sản phẩm này">×</a>-->
+<!--                                                <a href="http://mauweb.monamedia.net/fptshop/san-pham/dien-thoai-iphone-7-32gb-hang-chinh-hang/?attribute_mau=V%C3%A0ng+h%E1%BB%93ng">-->
+<!--                                                    <img width="180" height="180" src="" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" srcset="" sizes="(max-width: 180px) 100vw, 180px">Điện Thoại iPhone 7 32GB - Hàng Chính Hãng - Vàng hồng&nbsp;-->
+<!--                                                </a>-->
+<!--                                                <span class="quantity">3 × <span class="woocommerce-Price-amount amount">14,300,000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></span>-->
+<!--                                            </li>-->
+                                        </ul>
+                                        <p class="woocommerce-mini-cart__total total mini-cart"><strong>Tổng cộng:</strong> <span class="woocommerce-Price-amount amount">42,900,000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></p>
+                                        <p class="woocommerce-mini-cart__buttons buttons mini-cart"><a href="cart" class="button wc-forward">Xem giỏ hàng</a><a href="billing-information" class="button checkout wc-forward">Thanh toán</a></p>
+                                        <p class="woocommerce-mini-cart__empty-message mini-cart-empty">Chưa có sản phẩm trong giỏ hàng.</p>
+                                    </div>
+                                </li>
+<!--                                    <div class="widget_shopping_cart_content">-->
+<!--                                        <p class="woocommerce-mini-cart__empty-message">Chưa có sản phẩm trong giỏ hàng.</p>-->
+<!--                                    </div>-->
+
+                                </li>
+                            </ul><!-- .nav-dropdown -->
+
+                        </li>
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-category  menu-item-349 cart-item has-icon has-dropdown"
+                            id="menu-item-349"><a
+                                class="menu-image-title-below menu-image-not-hovered nav-top-link"
+                                href="/login"><img alt=""
+                                                                        id="img-login"
+                                                                        class="menu-image menu-image-title-below"
+                                                                        height="   "
+                                                                        src="wp-content/uploads/2017/12/icons8-login-24.png"
+                                                                        width=""/><span
+                                class="menu-image-title" id="user_login">Login</span></a>
+
+                            <ul class="nav-dropdown nav-dropdown-default">
+                                <li class="html widget_shopping_cart">
+                                    <div id="profile-table-content" class="widget_shopping_cart_content">
+<!--                                        <p class="woocommerce-mini-cart__total total mini-cart"><strong>Tổng cộng:</strong> <span class="woocommerce-Price-amount amount">42,900,000&nbsp;<span class="woocommerce-Price-currencySymbol">₫</span></span></p>-->
+                                        <p  class="woocommerce-mini-cart__buttons  buttons mini-cart">
+                                            <div id="profile-and-logout">
+                                                <a href="/login" class="button  wc-forward">Sign in to see your info</a>
+                                            </div>
+                                            <!-- <table id="profile-table"> -->
+<!--                                            <tr>-->
+<!--                                                <th>Profile</th>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td>Name</td>-->
+<!--                                                <td>Griffin</td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td>Username</td>-->
+<!--                                                <td>doc(username)</td>-->
+<!--                                            </tr>-->
+<!--                                        <tr>-->
+<!--                                            <td>Gender</td>-->
+<!--                                            <td>Griffin</td>-->
+<!--                                        </tr >-->
+<!--                                        <tr>-->
+<!--                                            <td>Email</td>-->
+<!--                                            <td>Griffin</td>-->
+<!--                                        </tr>-->
+                                        <!-- </table> -->
+                                            <!-- <a href="secu/logout" class="button  wc-forward">Logout</a> -->
+<!--                                            <a href="billing-information" class="button checkout wc-forward">Thanh toán</a>-->
+                                        </p>
+                                    </div>
+                                </li>
+                                <!--                                    <div class="widget_shopping_cart_content">-->
+                                <!--                                        <p class="woocommerce-mini-cart__empty-message">Chưa có sản phẩm trong giỏ hàng.</p>-->
+                                <!--                                    </div>-->
+
+                                </li>
+                            </ul><!-- .nav-dropdown -->
+                        </li>
+<!--                        <li class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-476"-->
+<!--                            id="menu-item-476"><a-->
+<!--                                class="menu-image-title-below menu-image-not-hovered nav-top-link"-->
+<!--                                href="hoi-dap/index.html"><img alt=""-->
+<!--                                                               class="menu-image menu-image-title-below"-->
+<!--                                                               height="24"-->
+<!--                                                               src="wp-content/uploads/2017/12/speech-bubble-with-question-mark.png"-->
+<!--                                                               width="24"/><span-->
+<!--                                class="menu-image-title">Hỏi đáp</span></a></li>-->
+                    </ul>
+                </div>
+
+                <!-- Mobile Right Elements -->
+                <div class="flex-col show-for-medium flex-right">
+                    <ul class="mobile-nav nav nav-right ">
+                        <li class="cart-item has-icon">
+                            <a class="header-cart-link off-canvas-toggle nav-top-link is-small"
+                               data-class="off-canvas-cart"
+                               data-open="#cart-popup" data-pos="right" href="gio-hang/index.html"
+                               title="Giỏ hàng">
+                            <span class="cart-icon image-icon">
+                            <strong>0</strong>
+                          </span>
+                            </a>
+
+
+                            <!-- Cart Sidebar Popup -->
+                            <div class="mfp-hide widget_shopping_cart" id="cart-popup">
+                                <div class="cart-popup-inner inner-padding">
+                                    <div class="cart-popup-title text-center">
+                                        <h4 class="uppercase">Giỏ hàng</h4>
+                                        <div class="is-divider"></div>
+                                    </div>
+                                    <div class="widget_shopping_cart_content">
+
+
+                                        <p class="woocommerce-mini-cart__empty-message">Chưa có sản phẩm trong giỏ
+                                            hàng.</p>
+
+
+                                    </div>
+                                    <div class="cart-sidebar-content relative"></div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div><!-- .header-inner -->
+
+            <!-- Header divider -->
+            <div class="container">
+                <div class="top-divider full-width"></div>
+            </div>
+        </div><!-- .header-main -->
+        <div class="header-bottom wide-nav flex-has-center hide-for-medium" id="wide-nav">
+            <div class="flex-row container">
+
+
+                <div class="flex-col hide-for-medium flex-center">
+                    <ul class="nav header-nav header-bottom-nav nav-center  nav-size-medium nav-spacing-xlarge nav-uppercase"
+                        id="ul_category">
+                        <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat  menu-item-446"
+                            id="menu-item-446"><a
+                                class="menu-image-title-after menu-image-not-hovered nav-top-link"
+                                href="danh-muc/dien-thoai/index.html"><img alt=""
+                                                                           class="menu-image menu-image-title-after"
+                                                                           height="24"
+                                                                           sizes="(max-width: 24px) 100vw, 24px"
+                                                                           src="wp-content/uploads/2017/12/smartphone-1-24x24.png"
+                                                                           srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1.png 64w"
+                                                                           width="24"/><span
+                                class="menu-image-title">Điện thoại</span></a></li>
+
+                    </ul>
+                </div><!-- flex-col -->
+
+
+            </div><!-- .flex-row -->
+        </div><!-- .header-bottom -->
+
+        <div class="header-bg-container fill">
+            <div class="header-bg-image fill"></div>
+            <div class="header-bg-color fill"></div>
+        </div><!-- .header-bg-container -->   </div><!-- header-wrapper-->
+</header>

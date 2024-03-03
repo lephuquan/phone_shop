@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" layout:decorate="~{layouts/layout}"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Category</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+  <div class="shop-page-title category-page-title page-title ">
+
+    <div class="page-title-inner flex-row  medium-flex-wrap container">
+      <div class="flex-col flex-grow medium-text-center">
+        <div class="is-medium">
+          <nav class="woocommerce-breadcrumb breadcrumbs"><a href="/home">&lt; &lt;Trở Lại Trang chủ</a> <span class="divider"> </span> </nav></div>
+          <div class="category-filtering category-filter-row show-for-medium">
+          <a href="#" data-open="#shop-sidebar" data-visible-after="true" data-pos="left" class="filter-button uppercase plain">
+            <i class="icon-menu"></i>
+            <strong>Lọc</strong>
+          </a>
+          <div class="inline-block">
+          </div>
+        </div>
+      </div><!-- .flex-left -->
+
+      <div class="flex-col medium-text-center">
+        <p class="woocommerce-result-count hide-for-medium">
+          </p>
+        <form class="woocommerce-ordering" method="get">
+          <select name="orderby" class="sort_product" style="width: 266px;">
+            <option value="menu_order"  selected='selected'>Thứ tự mặc định</option>
+<!--            <option value="popularity" >Thứ tự theo mức độ phổ biến</option>-->
+<!--            <option value="rating" >Thứ tự theo điểm đánh giá</option>-->
+            <option value="date" >Thứ tự theo sản phẩm mới</option>
+            <option value="price" >Thứ tự theo giá: thấp đến cao</option>
+            <option value="price-desc" >Thứ tự theo giá: cao xuống thấp</option>
+          </select>
+        </form>
+      </div><!-- .flex-right -->
+
+    </div><!-- flex-row -->
+  </div><!-- .page-title -->
+
+  <div class="row category-page-row">
+
+    <div class="col large-3 hide-for-medium ">
+      <div id="shop-sidebar" class="sidebar-inner col-inner">
+        <aside id="nav_menu-2" class="widget widget_nav_menu"><span class="widget-title shop-sidebar">Danh mục sản phẩm</span><div class="is-divider small"></div><div class="menu-menu-chinh-container">
+          <ul id="main_menu" class="menu">
+<!--                showcategory-js-->
+          </ul>
+        </div></aside><aside id="woocommerce_price_filter-2" class="widget woocommerce widget_price_filter"><span class="widget-title shop-sidebar">Lọc theo giá</span><div class="is-divider small"></div>
+<!--        <form method="get" action="http://mauweb.monamedia.net/fptshop/danh-muc/dien-thoai/">-->
+        <div class="price_slider_wrapper">
+          <div class="price_slider" style="display:none;"></div>
+          <div class="price_slider_amount">
+            <input type="text" id="min_price" name="min_price" value="3750000" data-min="3750000" placeholder="Giá thấp nhất" />
+            <input type="text" id="max_price" name="max_price" value="29990000" data-max="29990000" placeholder="Giá cao nhất" />
+            <button type="button" class="button" id="filter_price">Lọc</button>
+            <div class="price_label" style="display:none;">
+              Giá: <span class="from"></span> &mdash; <span class="to"></span>
+            </div>
+
+            <div class="clear"></div>
+          </div>
+        </div>
+<!--      </form>-->
+      </aside><aside id="woocommerce_products-3" class="widget woocommerce widget_products"><span class="widget-title shop-sidebar">Phụ kiện</span><div class="is-divider small"></div>
+        <ul id="show-accessories-item" class="product_list_widget">
+          <li  class="accessories-item">
+            <a href="../../san-pham/op-lung-deo-cho-iphone-6-plus-6s-plus-gau-kem-thu-noi/index.html">
+              <img width="180" height="180" src="../../wp-content/uploads/2017/12/op-deo-hinh-thu-01-180x180.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/op-deo-hinh-thu-01.jpg 550w" sizes="(max-width: 180px) 100vw, 180px" />
+              <span class="product-title">Ốp Lưng Dẻo Cho iPhone 6 Plus/6s Plus - Gấu Kèm Thú Nổi</span>
+            </a>
+<!--            <del>-->
+<!--              <span class="woocommerce-Price-amount amount">130,000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span>-->
+<!--            </del>-->
+            <ins><span class="woocommerce-Price-amount amount">90,000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins>
+          </li>
+
+<!--        <li>-->
+<!--          <a href="../../san-pham/bao-da-ipad-pro-10-5-inch-uag-metropolis-hang-chinh-hang/index.html">-->
+<!--            <img width="180" height="180" src="../../wp-content/uploads/2017/12/uag-ipad-01-180x180.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/uag-ipad-01.jpg 550w" sizes="(max-width: 180px) 100vw, 180px" />		<span class="product-title">Bao Da iPad Pro 10.5 inch UAG Metropolis - Hàng Chính Hãng</span>-->
+<!--          </a>-->
+<!--          <span class="woocommerce-Price-amount amount">1,034,000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></li>-->
+
+<!--        <li>-->
+<!--          <a href="../../san-pham/thiet-bi-ket-noi-bluetooth-voi-dien-thoai-kashimura-bl-40-3-0/index.html">-->
+<!--            <img width="180" height="180" src="../../wp-content/uploads/2017/12/Kashimura-BL-40-01-180x180.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Kashimura-BL-40-01.jpg 550w" sizes="(max-width: 180px) 100vw, 180px" />		<span class="product-title">Thiết Bị Kết Nối Bluetooth Với Điện Thoại Kashimura BL-40 3.0</span>-->
+<!--          </a>-->
+<!--          <span class="woocommerce-Price-amount amount">749,000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></li>-->
+
+<!--        <li>-->
+<!--          <a href="../../san-pham/295/index.html">-->
+<!--            <img width="180" height="180" src="../../wp-content/uploads/2017/12/Blaster-E3-01-180x180.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/Blaster-E3-01.jpg 550w" sizes="(max-width: 180px) 100vw, 180px" />		<span class="product-title">HD Headphone Amplifier Creative Sound Blaster E3 - Hàng Chính Hãng</span>-->
+<!--          </a>-->
+<!--          <del><span class="woocommerce-Price-amount amount">3,550,000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></del> <ins><span class="woocommerce-Price-amount amount">3,245,000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins></li>-->
+
+<!--        <li>-->
+<!--          <a href="../../san-pham/may-nghe-nhac-di-dong-astell-kern-ak-320-xam/index.html">-->
+<!--            <img width="180" height="180" src="../../wp-content/uploads/2017/12/astell-kern-ak320-01-180x180.jpg" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt="" srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/astell-kern-ak320-01.jpg 550w" sizes="(max-width: 180px) 100vw, 180px" />		<span class="product-title">Máy Nghe Nhạc Di Động Astell & Kern AK 320 Xám</span>-->
+<!--          </a>-->
+<!--          <del><span class="woocommerce-Price-amount amount">47,566,000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></del> <ins><span class="woocommerce-Price-amount amount">43,279,000&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></span></ins></li>-->
+      </ul></aside>
+        <aside id="flatsome_recent_posts-2" class="widget flatsome_recent_posts">
+<!--          <span class="widget-title shop-sidebar">Bài viết mới nhất</span><div class="is-divider small"></div>		<ul>-->
+
+<!--        <li class="recent-blog-posts-li">-->
+<!--          <div class="flex-row recent-blog-posts align-top pt-half pb-half">-->
+<!--            <div class="flex-col mr-half">-->
+<!--              <div class="badge post-date  badge-outline">-->
+<!--                <div class="badge-inner bg-fill" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/hinh-nen-mate-10-pro&#45;&#45;150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">-->
+<!--								<span class="post-date-day">07</span><br>-->
+<!--                <span class="post-date-month is-xsmall">Th12</span>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>&lt;!&ndash; .flex-col &ndash;&gt;-->
+<!--          <div class="flex-col flex-grow">-->
+<!--            <a href="../../tron-bo-hinh-nen-huawei-mate-10-dep-mien-che-cho-moi-smartphone/index.html" title="Trọn bộ hình nền Huawei Mate 10 đẹp &#8220;miễn chê&#8221; cho mọi smartphone">Trọn bộ hình nền Huawei Mate 10 đẹp &#8220;miễn chê&#8221; cho mọi smartphone</a>-->
+<!--            <span class="post_comments oppercase op-7 block is-xsmall"><a href="../../tron-bo-hinh-nen-huawei-mate-10-dep-mien-che-cho-moi-smartphone/index.html#respond"></a></span>-->
+<!--          </div>-->
+<!--      </div>&lt;!&ndash; .flex-row &ndash;&gt;-->
+<!--      </li>-->
+
+
+<!--      <li class="recent-blog-posts-li">-->
+<!--        <div class="flex-row recent-blog-posts align-top pt-half pb-half">-->
+<!--          <div class="flex-col mr-half">-->
+<!--            <div class="badge post-date  badge-outline">-->
+<!--              <div class="badge-inner bg-fill" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/Nokia-6-TA-1054-cover-150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">-->
+<!--								<span class="post-date-day">07</span><br>-->
+<!--              <span class="post-date-month is-xsmall">Th12</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>&lt;!&ndash; .flex-col &ndash;&gt;-->
+<!--        <div class="flex-col flex-grow">-->
+<!--          <a href="../../ro-ri-thong-tin-nokia-6-2018-man-hinh-tran-vien-ti-le-189-snapdragon-6xx-ram-4gb/index.html" title="Rò rỉ thông tin Nokia 6 (2018): Màn hình tràn viền, tỉ lệ 18:9, Snapdragon 6XX, RAM 4GB">Rò rỉ thông tin Nokia 6 (2018): Màn hình tràn viền, tỉ lệ 18:9, Snapdragon 6XX, RAM 4GB</a>-->
+<!--          <span class="post_comments oppercase op-7 block is-xsmall"><a href="../../ro-ri-thong-tin-nokia-6-2018-man-hinh-tran-vien-ti-le-189-snapdragon-6xx-ram-4gb/index.html#respond"></a></span>-->
+<!--        </div>-->
+<!--    </div>&lt;!&ndash; .flex-row &ndash;&gt;-->
+<!--    </li>-->
+
+
+<!--    <li class="recent-blog-posts-li">-->
+<!--      <div class="flex-row recent-blog-posts align-top pt-half pb-half">-->
+<!--        <div class="flex-col mr-half">-->
+<!--          <div class="badge post-date  badge-outline">-->
+<!--            <div class="badge-inner bg-fill" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/meizu-note-8-fptshop-150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">-->
+<!--								<span class="post-date-day">07</span><br>-->
+<!--            <span class="post-date-month is-xsmall">Th12</span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>&lt;!&ndash; .flex-col &ndash;&gt;-->
+<!--      <div class="flex-col flex-grow">-->
+<!--        <a href="../../meizu-note-8-bat-ngo-xuat-hien-trong-dien-mao-dep-hoan-hao/index.html" title="Meizu Note 8 bất ngờ xuất hiện trong diện mạo đẹp hoàn hảo">Meizu Note 8 bất ngờ xuất hiện trong diện mạo đẹp hoàn hảo</a>-->
+<!--        <span class="post_comments oppercase op-7 block is-xsmall"><a href="../../meizu-note-8-bat-ngo-xuat-hien-trong-dien-mao-dep-hoan-hao/index.html#respond"></a></span>-->
+<!--      </div>-->
+<!--  </div>&lt;!&ndash; .flex-row &ndash;&gt;-->
+<!--  </li>-->
+
+
+<!--  <li class="recent-blog-posts-li">-->
+<!--    <div class="flex-row recent-blog-posts align-top pt-half pb-half">-->
+<!--      <div class="flex-col mr-half">-->
+<!--        <div class="badge post-date  badge-outline">-->
+<!--          <div class="badge-inner bg-fill" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/danh-gia-asus-zenfone-4-max-pro-pin-sieu-trau-kha-bat-ngo-ve-camera-2-150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">-->
+<!--								<span class="post-date-day">07</span><br>-->
+<!--          <span class="post-date-month is-xsmall">Th12</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>&lt;!&ndash; .flex-col &ndash;&gt;-->
+<!--    <div class="flex-col flex-grow">-->
+<!--      <a href="../../tai-sao-nen-mua-phien-ban-thu-nho-asus-zenfone-4-max/index.html" title="Tại sao nên mua “phiên bản thu nhỏ” Asus Zenfone 4 Max?">Tại sao nên mua “phiên bản thu nhỏ” Asus Zenfone 4 Max?</a>-->
+<!--      <span class="post_comments oppercase op-7 block is-xsmall"><a href="../../tai-sao-nen-mua-phien-ban-thu-nho-asus-zenfone-4-max/index.html#respond"></a></span>-->
+<!--    </div>-->
+<!--</div>&lt;!&ndash; .flex-row &ndash;&gt;-->
+<!--</li>-->
+
+
+<!--<li class="recent-blog-posts-li">-->
+<!--  <div class="flex-row recent-blog-posts align-top pt-half pb-half">-->
+<!--    <div class="flex-col mr-half">-->
+<!--      <div class="badge post-date  badge-outline">-->
+<!--        <div class="badge-inner bg-fill" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url(../../wp-content/uploads/2017/12/Nhung-dieu-tuyet-voi-se-co-tren-smartphone-android-cao-cap-2018-4-150x150.jpg); color:#fff; text-shadow:1px 1px 0px rgba(0,0,0,.5); border:0;">-->
+<!--								<span class="post-date-day">07</span><br>-->
+<!--        <span class="post-date-month is-xsmall">Th12</span>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>&lt;!&ndash; .flex-col &ndash;&gt;-->
+<!--  <div class="flex-col flex-grow">-->
+<!--    <a href="../../nhung-dieu-tuyet-voi-se-xuat-hien-tren-smartphone-android-dinh-cao-2018/index.html" title="Những điều tuyệt vời sẽ xuất hiện trên smartphone Android đỉnh cao 2018">Những điều tuyệt vời sẽ xuất hiện trên smartphone Android đỉnh cao 2018</a>-->
+<!--    <span class="post_comments oppercase op-7 block is-xsmall"><a href="../../nhung-dieu-tuyet-voi-se-xuat-hien-tren-smartphone-android-dinh-cao-2018/index.html#respond"></a></span>-->
+<!--  </div>-->
+<!--  </div>&lt;!&ndash; .flex-row &ndash;&gt;-->
+<!--</li>-->
+<!--</ul>		-->
+        </aside>			</div><!-- .sidebar-inner -->
+</div><!-- #shop-sidebar -->
+  <div class="col large-9">
+    <div class="3">
+
+      <div class="wc_woo_view_wrapper">
+        <div id="wc_woo_view_tabs">
+          <form id="woo_view_form" method="get">
+            <ul id="woo_view_nav_ul"><li><a href="#" class="selected" id="list" title="List View"><span class="selected"><em class="list"></em>List View</span></a></li><li><a href="#" class="" id="date" title="Date View"><span class=""><em class="date"></em>Date View</span></a></li><li><a href="#" class="" id="grid" title="Grid View"><span class=""><em class="grid"></em>Grid View</span></a></li><li><a href="#" class="" id="map" title="Map View"><span class=""><em class="map"></em>Map View</span></a></li></ul><input type="hidden" name="view" id="woo_view_view" value="" /></form>
+        </div>
+      </div>
+      <div id="div_product" class="products row row-small large-columns-4 medium-columns-3 small-columns-2 has-shadow row-box-shadow-1 row-box-shadow-2-hover">
+        <div style="display:none" class="product-item product-small col has-hover post-125 product type-product status-publish has-post-thumbnail product_cat-blackberry product_cat-dien-thoai first instock shipping-taxable purchasable product-type-simple">
+          <div class="col-inner">
+            <div class="badge-container absolute left top z-1">
+            </div>
+            <div class="product-small box ">
+              <div class="box-image">
+                <div class="image-fade_in_back">
+                  <a class="link-product" href="../../san-pham/dien-thoai-blackberry-keyone-hang-chinh-hang/index.html">
+                    <img width="300" height="300" src="../../wp-content/uploads/2017/12/bb-key-one-01-300x300.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="" srcset="//mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01-300x300.jpg 300w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01-150x150.jpg 150w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01-180x180.jpg 180w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01-24x24.jpg 24w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01-36x36.jpg 36w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01-48x48.jpg 48w, //mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-01.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" />
+                    <img width="300" height="300" src="../../wp-content/uploads/2017/12/bb-key-one-04-300x300.jpg" class="show-on-hover absolute fill hide-for-small back-image" alt="" srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-04-300x300.jpg 300w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-04-150x150.jpg 150w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-04-180x180.jpg 180w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-04-24x24.jpg 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-04-36x36.jpg 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-04-48x48.jpg 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/bb-key-one-04.jpg 550w" sizes="(max-width: 300px) 100vw, 300px" />				</a>
+                </div>
+                <div class="image-tools is-small top right show-on-hover">
+                </div>
+                <div class="image-tools is-small hide-for-small bottom left show-on-hover">
+                </div>
+                <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+                </div>
+              </div><!-- box-image -->
+
+              <div class="box-text box-text-products">
+                <div class="title-wrapper">
+                  <p class="name product-title">
+                    <a class="link-product" href="../../san-pham/dien-thoai-blackberry-keyone-hang-chinh-hang/index.html">
+                      Điện Thoại BlackBerry KEYone &#8211; Hàng Chính Hãng</a>
+                  </p>
+                </div>
+                <div class="price-wrapper">
+                <span class="price">
+                  <span class="woocommerce-Price-amount amount">14,990,000&nbsp;
+                    <span class="woocommerce-Price-currencySymbol">&#8363;</span>
+                  </span></span>
+              </div>
+              </div><!-- box-text -->
+            </div><!-- box -->
+          </div><!-- .col-inner -->
+        </div><!-- col -->
+
+      </div><!-- row -->
+
+
+    </div><!-- shop container -->
+  </div>
+</div>
+
+  <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts20fd.js?ver=4.9.2'></script>
+  <script type='text/javascript' src='wp-content/plugins/ot-flatsome-vertical-menu/assets/js/ot-vertical-menuf488.js?ver=1.1.0'></script>
+  <script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/fptshop\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/mauweb.monamedia.net\/fptshop\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Xem gi\u1ecf h\u00e0ng","cart_url":"http:\/\/mauweb.monamedia.net\/fptshop\/gio-hang\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+  <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minc169.js?ver=3.2.6'></script>
+  <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script>
+  <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js?ver=2.1.4'></script>
+  <script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/fptshop\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/mauweb.monamedia.net\/fptshop\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+  <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.minc169.js?ver=3.2.6'></script>
+  <script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/fptshop\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/mauweb.monamedia.net\/fptshop\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_016b33d5803be188508090e7b9345717"};
+/* ]]> */
+</script>
+  <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.minc169.js?ver=3.2.6'></script>
+  <script type='text/javascript' src='wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-searchccfb.js?ver=3.4.2'></script>
+  <script type='text/javascript' src='wp-includes/js/hoverIntent.minc245.js?ver=1.8.1'></script>
+  <script type='text/javascript'>
+/* <![CDATA[ */
+var flatsomeVars = {"ajaxurl":"http:\/\/mauweb.monamedia.net\/fptshop\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"70"};
+/* ]]> */
+</script>
+  <script type='text/javascript' src='wp-content/themes/flatsome/assets/js/flatsomeccfb.js?ver=3.4.2'></script>
+  <script type='text/javascript' src='wp-content/themes/flatsome/assets/js/woocommerceccfb.js?ver=3.4.2'></script>
+  <script type='text/javascript' src='wp-includes/js/wp-embed.minca80.js?ver=4.9.15'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/ui/widget.mine899.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.mine899.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='wp-includes/js/jquery/ui/slider.mine899.js?ver=1.11.4'></script>
+  <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-ui-touch-punch/jquery-ui-touch-punch.minc169.js?ver=3.2.6'></script>
+  <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/accounting/accounting.minaffb.js?ver=0.4.2'></script>
+  <script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_price_slider_params = {"currency_format_num_decimals":"0","currency_format_symbol":"\u20ab","currency_format_decimal_sep":".","currency_format_thousand_sep":",","currency_format":"%v\u00a0%s"};
+/* ]]> */
+</script>
+  <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/price-slider.minc169.js?ver=3.2.6'></script>
+  <script>
+    jQuery(document).ready(function () {
+            getProductByCategory();
+            $('.sort_product').change(function() {
+              getProductByCategory($('.sort_product').val());
+            })
+            loadAccessories();
+            loadClickButtonSearch();
+           });
+  </script>
+</div>
+
+</body>
+</html>

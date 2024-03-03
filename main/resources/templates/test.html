@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+<body>
+  <script>
+    $(document).ready(function(){
+      $("#profile-and-logout").html(tableProfile);
+});
+    var tableProfile =
+    '<ul  class="nav-dropdown nav-dropdown-default">'+
+    '<li class="html widget_shopping_cart">'+
+    '<div id="profile-table-content" class="widget_shopping_cart_content">'+
+    '<p  class="woocommerce-mini-cart__buttons  buttons mini-cart">'+
+           ' <table> <tr><th colspan="2" style="color:blue">Your profile</th></tr><tr><td>Name</td><td style="color:blue">' +
+           12 +
+           " " +
+           12 +
+           '</td></tr><tr><td>Username</td><td style="color:blue">' +
+           12 +
+           '</td></tr> <tr> <td>Gender</td><td style="color:blue"> ' +
+           12 +
+           '</td></tr ><tr><td>Email</td><td style="color:blue">' +
+           12 +
+           "</td></tr> </table>" +
+           '<a href="secu/logout" class="button  wc-forward">Logout</a>'+
+         '</p></div></li></ul>';
+
+         $("#profile-and-logout").html(tableProfile);
+     
+   </script>
+  <div id="profile-and-logout">
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" layout:decorate="~{layouts/admin-layout}"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>Admin Add Product</title>
+</head>
+    <body>
+        <div class="container-fluid" layout:fragment="content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">General</h3>
+
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                    <i class="fas fa-minus"></i></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="txt_name"> Name</label>
+                                <input type="text" id="txt_name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="txt_parameter"> Parameter</label>
+                                <textarea id="txt_parameter" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="txt_detail"> Detail</label>
+                                <textarea id="txt_detail" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="txt_price"> Price</label>
+                                <input type="text" id="txt_price" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="txt_variant"> Variant List</label>
+                                <textarea id="txt_variant" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="txt_description">Description</label>
+                                <textarea id="txt_description" name="txt_description" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="cbo_category">Category Detail</label>
+                                <select class="form-control custom-select" id="cbo_category">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="cbo_producer">Producer</label>
+                                <select class="form-control custom-select" id="cbo_producer">
+                                </select>
+                            </div>
+                            <div class="form-group" style="display: flex">
+                                <span>Main photo</span>
+                                <input id="main_photo" type="file" name="file" class="file-input" required />
+                                <button type="button" id="upload_single" class="primary submit-btn">Upload</button>
+                                <img id="img_main" class="img-main" style="width: 200px; height:50px"/>
+                            </div>
+                            <div class="form-group" style="display: flex">
+                                <span>Other photo</span>
+                                <input id="other_photo" type="file" name="files" class="file-input" multiple  required />
+                                <button type="button" id="upload_multiple" class="primary submit-btn">Upload</button>
+                                <div id="list_photo" style="display: flex">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="btn btn-secondary">Cancel</a>
+                    <input type="button" id="btn_add_product" value="Add new product" class="btn btn-success float-right">
+                </div>
+            </div>
+            <script src="plugins/summernote/summernote-bs4.min.js"></script>
+            <script src="js/admin/add-product.js"></script>
+            <script>
+
+            </script>
+        </div>
+    </body>
+
+</html>

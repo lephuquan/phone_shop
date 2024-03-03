@@ -1,0 +1,432 @@
+ <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta content="text/html;charset=UTF-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+
+    <link href="wp-includes/css/dashicons.minca80.css?ver=4.9.15" id='dashicons-css' media='all' rel='stylesheet'
+          type='text/css'/>
+    <link href='wp-content/plugins/ot-flatsome-vertical-menu/libs/menu-icons/css/extra.mincf86.css?ver=0.10.2' id='menu-icons-extra-css'
+          media='all'
+          rel='stylesheet' type='text/css'/>
+    <link href='wp-content/plugins/call-now-icon-animate/css.css' id='hrw-css' media='' rel='stylesheet'
+          type='text/css'/>
+    <link href='wp-content/plugins/contact-form-7/includes/css/styles20fd.css?ver=4.9.2' id='contact-form-7-css'
+          media='all' rel='stylesheet' type='text/css'/>
+    <link href='wp-content/plugins/menu-image/menu-image4963.css?ver=1.1' id='menu-image-css' media='all'
+          rel='stylesheet' type='text/css'/>
+    <link href='wp-content/plugins/ot-flatsome-vertical-menu/assets/css/ot-vertical-menuf488.css?ver=1.1.0' id='ot-vertical-menu-css'
+          media='all'
+          rel='stylesheet' type='text/css'/>
+    <link href='wp-content/themes/flatsome/assets/css/fl-icons6de8.css?ver=3.3' id='flatsome-icons-css' media='all'
+          rel='stylesheet' type='text/css'/>
+    <link href='wp-content/plugins/easy-social-share-buttons3/assets/css/default-retina/easy-social-share-buttons1ac1.css?ver=3.7.3' id='easy-social-share-buttons-css'
+          media='all'
+          rel='stylesheet' type='text/css'/>
+    <link href='wp-content/plugins/easy-social-share-buttons3/lib/modules/click-to-tweet/assets/css/styles1ac1.css?ver=3.7.3' id='essb-cct-style-css'
+          media='all'
+          rel='stylesheet' type='text/css'/>
+    <link href='wp-content/plugins/woocommerce-view/assets/css/woo_viewca80.css?ver=4.9.15' id='grid-list-layout-css'
+          media='all' rel='stylesheet'
+          type='text/css'/>
+    <link href='wp-content/themes/flatsome/assets/css/flatsomeccfb.css?ver=3.4.2' id='flatsome-main-css'
+          media='all' rel='stylesheet' type='text/css'/>
+    <link href='wp-content/themes/flatsome/assets/css/flatsome-shopccfb.css?ver=3.4.2' id='flatsome-shop-css'
+          media='all' rel='stylesheet' type='text/css'/>
+    <link href='wp-content/themes/flatsome-child/styleccfb.css?ver=3.4.2' id='flatsome-style-css' media='all'
+          rel='stylesheet' type='text/css'/>
+    <script src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4' type='text/javascript'></script>
+    <script src='wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1' type='text/javascript'></script>
+
+    <noscript>
+        <style>.woocommerce-product-gallery{ opacity: 1 !important; }</style>
+    </noscript>
+    <style type="text/css">
+        .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after, .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after { color: #777777;content: "shares";display: block;font-size: 11px;font-weight: normal;text-align: center;text-transform: uppercase;margin-top: -5px; } .essb_links_list li.essb_totalcount_item .essb_t_l_big, .essb_links_list li.essb_totalcount_item .essb_t_r_big { text-align: center; }.essb_displayed_sidebar .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after, .essb_displayed_sidebar .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after { margin-top: 0px; } .essb_displayed_sidebar_right .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after, .essb_displayed_sidebar_right .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after { margin-top: 0px; } .essb_totalcount_item_before, .essb_totalcount_item_after { display: block !important; }.essb_totalcount_item_before .essb_totalcount, .essb_totalcount_item_after .essb_totalcount { border: 0px !important; }.essb_counter_insidebeforename { margin-right: 5px; font-weight: bold; }.essb_width_columns_1 li { width: 100%; }.essb_width_columns_1 li a { width: 92%; }.essb_width_columns_2 li { width: 49%; }.essb_width_columns_2 li a { width: 86%; }.essb_width_columns_3 li { width: 32%; }.essb_width_columns_3 li a { width: 80%; }.essb_width_columns_4 li { width: 24%; }.essb_width_columns_4 li a { width: 70%; }.essb_width_columns_5 li { width: 19.5%; }.essb_width_columns_5 li a { width: 60%; }.essb_width_columns_6 li { width: 16%; }.essb_width_columns_6 li a { width: 55%; }.essb_links li.essb_totalcount_item_before, .essb_width_columns_1 li.essb_totalcount_item_after { width: 100%; text-align: left; }.essb_network_align_center a { text-align: center; }.essb_network_align_right .essb_network_name { float: right;}
+    </style>
+    <script type="text/javascript">
+        var essb_settings = {"ajax_url":"http:\/\/mauweb.monamedia.net\/fptshop\/wp-admin\/admin-ajax.php","essb3_nonce":"2bd95cef46","essb3_plugin_url":"http:\/\/mauweb.monamedia.net\/fptshop\/wp-content\/plugins\/easy-social-share-buttons3","essb3_facebook_total":true,"essb3_admin_ajax":false,"essb3_internal_counter":false,"essb3_stats":false,"essb3_ga":false,"essb3_ga_mode":"simple","essb3_counter_button_min":0,"essb3_counter_total_min":0,"blog_url":"http:\/\/mauweb.monamedia.net\/fptshop\/","ajax_type":"wp","essb3_postfloat_stay":false,"essb3_no_counter_mailprint":false,"essb3_single_ajax":false,"twitter_counter":"self","post_id":16};
+    </script>
+    <style id="custom-css" type="text/css">
+        :root {--primary-color: #446084;}/* Site Width */.full-width .ubermenu-nav, .container, .row{max-width: 1200px}.row.row-collapse{max-width: 1170px}.row.row-small{max-width: 1192.5px}.row.row-large{max-width: 1230px}body.framed, body.framed header, body.framed .header-wrapper, body.boxed, body.boxed header, body.boxed .header-wrapper, body.boxed .is-sticky-section{ max-width: 1230px}.header-main{height: 58px}#logo img{max-height: 58px}#logo{width:151px;}.header-bottom{min-height: 41px}.header-top{min-height: 30px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 108px;}.header.show-on-scroll,.stuck .header-main{height:70px!important}.stuck #logo img{max-height: 70px!important}.search-form{ width: 80%;}.header-bg-color, .header-wrapper {background-color: rgba(0,0,0,0.9)}.header-bottom {background-color: #ffffff}.header-main .nav > li > a{line-height: 16px }.header-bottom-nav > li > a{line-height: 16px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}/* Background Color */[data-icon-label]:after, .secondary.is-underline:hover,.secondary.is-outline:hover,.icon-label,.button.secondary:not(.is-outline),.button.alt:not(.is-outline), .badge-inner.on-sale, .button.checkout, .single_add_to_cart_button{ background-color:#d70909; }/* Color */.secondary.is-underline,.secondary.is-link, .secondary.is-outline,.stars a.active, .star-rating:before, .woocommerce-page .star-rating:before,.star-rating span:before, .color-secondary{color: #d70909}/* Color !important */[data-text-color="secondary"]{color: #d70909!important;}/* Border */.secondary.is-outline:hover{border-color:#d70909}body{font-family:"Roboto", sans-serif}body{font-weight: 0}body{color: #1c1c1c}.nav > li > a {font-family:"Roboto", sans-serif;}.nav > li > a {font-weight: 0;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: "Roboto", sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2{font-weight: 0;}h1,h2,h3,h4,h5,h6,.heading-font{color: #1c1c1c;}.alt-font{font-family: "Roboto", sans-serif;}.alt-font{font-weight: 0!important;}.header:not(.transparent) .header-nav.nav > li > a {color: #ffffff;}.header:not(.transparent) .header-bottom-nav.nav > li > a{color: #000000;}.header:not(.transparent) .header-bottom-nav.nav > li > a:hover,.header:not(.transparent) .header-bottom-nav.nav > li.active > a,.header:not(.transparent) .header-bottom-nav.nav > li.current > a,.header:not(.transparent) .header-bottom-nav.nav > li > a.active,.header:not(.transparent) .header-bottom-nav.nav > li > a.current{color: #3399d2;}.header-bottom-nav.nav-line-bottom > li > a:before,.header-bottom-nav.nav-line-grow > li > a:before,.header-bottom-nav.nav-line > li > a:before,.header-bottom-nav.nav-box > li > a:hover,.header-bottom-nav.nav-box > li.active > a,.header-bottom-nav.nav-pills > li > a:hover,.header-bottom-nav.nav-pills > li.active > a{color:#FFF!important;background-color: #3399d2;}a{color: #000000;}a:hover{color: #3399d2;}.tagcloud a:hover{border-color: #3399d2;background-color: #3399d2;}@media screen and (min-width: 550px){.products .box-vertical .box-image{min-width: 300px!important;width: 300px!important;}}.absolute-footer, html{background-color: #f2f2f2}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}
+    </style>
+    <link href='css/layout.css'  rel='stylesheet' type='text/css'/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body class="home page-template page-template-page-blank page-template-page-blank-php page page-id-16 lightbox nav-dropdown-has-arrow">
+
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+<div id="wrapper">
+
+    <header th:replace="fragments/header :: header"></header>
+    <main class="" id="main" layout:fragment="content">
+
+    </main><!-- #main -->
+    <footer th:replace="fragments/footer :: footer"></footer>
+</div><!-- #wrapper -->
+
+<!--&lt;!&ndash; Mobile Sidebar &ndash;&gt;-->
+<!--<div class="mobile-sidebar no-scrollbar mfp-hide" id="main-menu">-->
+<!--    <div class="sidebar-menu no-scrollbar ">-->
+<!--        <ul class="nav nav-sidebar  nav-vertical nav-uppercase">-->
+<!--            <li class="header-search-form search-form html relative has-icon">-->
+<!--                <div class="header-search-form-wrapper">-->
+<!--                    <div class="searchform-wrapper ux-search-box relative form- is-normal">-->
+<!--                        <form action="http://mauweb.monamedia.net/fptshop/" class="searchform" method="get"-->
+<!--                              role="search">-->
+<!--                            <div class="flex-row relative">-->
+<!--                                <div class="flex-col flex-grow">-->
+<!--                                    <input class="search-field mb-0" name="s" placeholder="Nhập tên điện thoại, máy tính, phụ kiện ... cần tìm" type="search"-->
+<!--                                           value=""/>-->
+<!--                                    <input name="post_type" type="hidden" value="product"/>-->
+<!--                                </div>&lt;!&ndash; .flex-col &ndash;&gt;-->
+<!--                                <div class="flex-col">-->
+<!--                                    <button class="ux-search-submit submit-button secondary button icon mb-0"-->
+<!--                                            type="submit">-->
+<!--                                        <i class="icon-search"></i></button>-->
+<!--                                </div>&lt;!&ndash; .flex-col &ndash;&gt;-->
+<!--                            </div>&lt;!&ndash; .flex-row &ndash;&gt;-->
+<!--                            <div class="live-search-results text-left z-top"></div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-446"><a-->
+<!--                    class="menu-image-title-after menu-image-not-hovered" href="danh-muc/dien-thoai/index.html"><img-->
+<!--                    alt="" class="menu-image menu-image-title-after" height="24"-->
+<!--                    sizes="(max-width: 24px) 100vw, 24px" src="wp-content/uploads/2017/12/smartphone-1-24x24.png"-->
+<!--                    srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/smartphone-1.png 64w"-->
+<!--                    width="24"/><span class="menu-image-title">Điện thoại</span></a></li>-->
+<!--            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-449"><a-->
+<!--                    class="menu-image-title-after menu-image-not-hovered" href="danh-muc/laptop/index.html"><img-->
+<!--                    alt="" class="menu-image menu-image-title-after" height="24"-->
+<!--                    sizes="(max-width: 24px) 100vw, 24px" src="wp-content/uploads/2017/12/laptop-2-24x24.png"-->
+<!--                    srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/laptop-2-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/laptop-2-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/laptop-2-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/laptop-2.png 64w"-->
+<!--                    width="24"/><span class="menu-image-title">Laptop</span></a></li>-->
+<!--            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-447"><a-->
+<!--                    class="menu-image-title-after menu-image-not-hovered"-->
+<!--                    href="danh-muc/dien-thoai/apple/index.html"><img alt="" class="menu-image menu-image-title-after"-->
+<!--                                                                     height="24"-->
+<!--                                                                     sizes="(max-width: 24px) 100vw, 24px"-->
+<!--                                                                     src="wp-content/uploads/2017/12/apple-24x24.png"-->
+<!--                                                                     srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/apple-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/apple-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/apple-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/apple.png 64w"-->
+<!--                                                                     width="24"/><span-->
+<!--                    class="menu-image-title">Apple</span></a></li>-->
+<!--            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-448"><a-->
+<!--                    class="menu-image-title-after menu-image-not-hovered" href="danh-muc/dien-thoai/samsung/index.html"><img-->
+<!--                    alt="" class="menu-image menu-image-title-after"-->
+<!--                    height="24"-->
+<!--                    sizes="(max-width: 24px) 100vw, 24px" src="wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model-24x24.png"-->
+<!--                    srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/phone-samsung-galaxy-note-popular-model.png 64w"-->
+<!--                    width="24"/><span class="menu-image-title">Samsung</span></a></li>-->
+<!--            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-592"><a-->
+<!--                    class="menu-image-title-after menu-image-not-hovered" href="tablet/index.html"><img alt=""-->
+<!--                                                                                                        class="menu-image menu-image-title-after"-->
+<!--                                                                                                        height="24"-->
+<!--                                                                                                        sizes="(max-width: 24px) 100vw, 24px"-->
+<!--                                                                                                        src="wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1-24x24.png"-->
+<!--                                                                                                        srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/tablet-outline-in-horizontal-position-1.png 64w"-->
+<!--                                                                                                        width="24"/><span-->
+<!--                    class="menu-image-title">Tablet</span></a></li>-->
+<!--            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-450"><a-->
+<!--                    class="menu-image-title-after menu-image-not-hovered" href="danh-muc/phu-kien/index.html"><img-->
+<!--                    alt="" class="menu-image menu-image-title-after" height="24"-->
+<!--                    sizes="(max-width: 24px) 100vw, 24px" src="wp-content/uploads/2017/12/headset-1-24x24.png"-->
+<!--                    srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/headset-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/headset-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/headset-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/headset-1.png 64w"-->
+<!--                    width="24"/><span class="menu-image-title">Phụ kiện</span></a></li>-->
+<!--            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-504"><a-->
+<!--                    class="menu-image-title-after menu-image-not-hovered" href="khuyen-mai/index.html"><img alt=""-->
+<!--                                                                                                            class="menu-image menu-image-title-after"-->
+<!--                                                                                                            height="24"-->
+<!--                                                                                                            sizes="(max-width: 24px) 100vw, 24px"-->
+<!--                                                                                                            src="wp-content/uploads/2017/12/gift-1-24x24.png"-->
+<!--                                                                                                            srcset="http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/gift-1-24x24.png 24w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/gift-1-36x36.png 36w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/gift-1-48x48.png 48w, http://mauweb.monamedia.net/fptshop/wp-content/uploads/2017/12/gift-1.png 64w"-->
+<!--                                                                                                            width="24"/><span-->
+<!--                    class="menu-image-title">Khuyến mãi</span></a></li>-->
+<!--            <li class="account-item has-icon menu-item">-->
+<!--                <a class="nav-top-link nav-top-not-logged-in"-->
+<!--                   href="tai-khoan/index.html">-->
+<!--    <span class="header-account-title">-->
+<!--    Đăng nhập  </span>-->
+<!--                </a>&lt;!&ndash; .account-login-link &ndash;&gt;-->
+
+<!--            </li>-->
+<!--            <li class="header-newsletter-item has-icon">-->
+
+<!--                <a class="tooltip" href="#header-newsletter-signup" title="Sign up for Newsletter">-->
+
+<!--                    <i class="icon-envelop"></i>-->
+<!--                    <span class="header-newsletter-title">-->
+<!--      Newsletter    </span>-->
+<!--                </a>&lt;!&ndash; .newsletter-link &ndash;&gt;-->
+
+<!--            </li>-->
+<!--            <li class="html header-social-icons ml-0">-->
+<!--                <div class="social-icons follow-icons "><a class="icon plain facebook tooltip" data-label="Facebook" href="http://url/"-->
+<!--                                                           rel="nofollow" target="_blank"-->
+<!--                                                           title="Follow on Facebook"><i-->
+<!--                        class="icon-facebook"></i></a><a class="icon plain  instagram tooltip" data-label="Instagram" href="http://url/"-->
+<!--                                                         rel="nofollow" target="_blank"-->
+<!--                                                         title="Follow on Instagram"><i-->
+<!--                        class="icon-instagram"></i></a><a class="icon plain  twitter tooltip" data-label="Twitter" href="http://url/"-->
+<!--                                                          rel="nofollow" target="_blank"-->
+<!--                                                          title="Follow on Twitter"><i class="icon-twitter"></i></a><a-->
+<!--                        class="icon plain  email tooltip"-->
+<!--                        data-label="E-mail" href="http://mauweb.monamedia.net/cdn-cgi/l/email-protection#562f39232416333b373f3a" rel="nofollow" title="Send us an email"><i-->
+<!--                        class="icon-envelop"></i></a></div>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>&lt;!&ndash; inner &ndash;&gt;-->
+<!--</div>&lt;!&ndash; #mobile-menu &ndash;&gt;-->
+<div id='fb-root'></div>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '../../connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div attribution="wordpress"
+     class='fb-customerchat'
+     page_id='1342183349141230'
+>
+</div>
+<div class="lightbox-content mfp-hide" id="login-form-popup">
+
+    <div class="my-account-header page-title normal-title
+	">
+
+
+        <div class="page-title-inner flex-row  container">
+            <div class="flex-col flex-grow medium-text-center">
+
+                <div class="text-center social-login">
+
+
+                </div>
+
+            </div><!-- .flex-left -->
+        </div><!-- flex-row -->
+    </div><!-- .page-title -->
+
+
+    <div class="account-container lightbox-inner">
+
+        <div class="account-login-inner">
+
+            <h3 class="uppercase">Đăng nhập</h3>
+
+            <form class="woocommerce-form woocommerce-form-login login" method="post">
+
+
+                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                    <label for="username">Tên tài khoản hoặc địa chỉ email <span class="required">*</span></label>
+                    <input class="woocommerce-Input woocommerce-Input--text input-text" id="username" name="username"
+                           type="text" value=""/>
+                </p>
+                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                    <label for="password">Mật khẩu <span class="required">*</span></label>
+                    <input class="woocommerce-Input woocommerce-Input--text input-text" id="password" name="password"
+                           type="password"/>
+                </p>
+
+
+                <p class="form-row">
+                    <input id="woocommerce-login-nonce" name="woocommerce-login-nonce" type="hidden"
+                           value="29590c97ff"/><input name="_wp_http_referer" type="hidden" value="/fptshop/"/> <input
+                        class="woocommerce-Button button" name="login" type="submit" value="Đăng nhập"/>
+                    <label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
+                        <input class="woocommerce-form__input woocommerce-form__input-checkbox" id="rememberme"
+                               name="rememberme" type="checkbox" value="forever"/> <span>Ghi nhớ mật khẩu</span>
+                    </label>
+                </p>
+                <p class="woocommerce-LostPassword lost_password">
+                    <a href="tai-khoan/lost-password/index.html">Quên mật khẩu?</a>
+                </p>
+
+
+            </form>
+        </div><!-- .login-inner -->
+
+
+    </div><!-- .account-login-container -->
+
+</div>
+<script>
+            jQuery(document).ready(function () {
+                var licnt = 0;
+                jQuery('#woo_view_nav_ul a').click(function () {
+                    var vals = jQuery(this).attr('id');
+                    jQuery('#woo_view_view').attr('value', vals);
+                    jQuery('#woo_view_form').submit();
+                });
+
+                jQuery('ul.products').addClass('list');
+                jQuery('ul.products li').each(function (e, i) {
+                    jQuery(this).addClass('woo_view_map_li');
+                });
+
+
+            });
+
+
+</script>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <!-- <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+ 
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" aria-label="Đóng (Esc)"></button>
+
+                <button class="pswp__button pswp__button--zoom" aria-label="Phóng to/ thu nhỏ"></button>
+
+                <div class="pswp__preloader">
+                    <div class="loading-spin"></div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button--arrow--left" aria-label="Ảnh trước (mũi tên trái)"></button>
+
+            <button class="pswp__button--arrow--right" aria-label="Ảnh tiếp (mũi tên phải)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div> -->
+
+    </div>
+
+</div>
+<script>
+
+        jQuery(document).ready(function () {
+            var container = jQuery('#wc_woo_view_scroller');
+
+
+                    });
+
+
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/mauweb.monamedia.net\/fptshop\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"H\u00e3y x\u00e1c nh\u1eadn r\u1eb1ng b\u1ea1n kh\u00f4ng ph\u1ea3i l\u00e0 robot."}}};
+/* ]]> */
+
+</script>
+<script src='wp-content/plugins/contact-form-7/includes/js/scripts20fd.js?ver=4.9.2' type='text/javascript'></script>
+<script src='wp-content/plugins/ot-flatsome-vertical-menu/assets/js/ot-vertical-menuf488.js?ver=1.1.0'
+        type='text/javascript'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/fptshop\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/mauweb.monamedia.net\/fptshop\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Xem gi\u1ecf h\u00e0ng","cart_url":"http:\/\/mauweb.monamedia.net\/fptshop\/gio-hang\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+
+</script>
+<script src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minc169.js?ver=3.2.6'
+        type='text/javascript'></script>
+<script src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'
+        type='text/javascript'></script>
+<script src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js?ver=2.1.4'
+        type='text/javascript'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/fptshop\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/mauweb.monamedia.net\/fptshop\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+
+</script>
+<script src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.minc169.js?ver=3.2.6'
+        type='text/javascript'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/fptshop\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/mauweb.monamedia.net\/fptshop\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_016b33d5803be188508090e7b9345717"};
+/* ]]> */
+
+</script>
+<script src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.minc169.js?ver=3.2.6'
+        type='text/javascript'></script>
+<script src='wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-searchccfb.js?ver=3.4.2'
+        type='text/javascript'></script>
+<script src='wp-includes/js/hoverIntent.minc245.js?ver=1.8.1' type='text/javascript'></script>
+<!--<script type='text/javascript'>-->
+<!--/* <![CDATA[ */-->
+<!--var flatsomeVars = {"ajaxurl":"http:\/\/mauweb.monamedia.net\/fptshop\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"70"};-->
+<!--/* ]]> */-->
+
+<!--</script>-->
+<!--<script src='wp-content/themes/flatsome/assets/js/flatsomeccfb.js?ver=3.4.2' type='text/javascript'></script>-->
+<!--<script src='wp-content/themes/flatsome/assets/js/woocommerceccfb.js?ver=3.4.2' type='text/javascript'></script>-->
+<!--<script src='wp-includes/js/wp-embed.minca80.js?ver=4.9.15' type='text/javascript'></script>-->
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"http:\/\/mauweb.monamedia.net\/fptshop\/wp-includes\/js\/zxcvbn.min.js"};
+/* ]]> */
+
+</script>
+<script src='wp-includes/js/zxcvbn-async.min5152.js?ver=1.0' type='text/javascript'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pwsL10n = {"unknown":"M\u1eadt kh\u1ea9u m\u1ea1nh kh\u00f4ng x\u00e1c \u0111\u1ecbnh","short":"R\u1ea5t y\u1ebfu","bad":"Y\u1ebfu","good":"Trung b\u00ecnh","strong":"M\u1ea1nh","mismatch":"M\u1eadt kh\u1ea9u kh\u00f4ng kh\u1edbp"};
+/* ]]> */
+
+</script>
+<script src='wp-admin/js/password-strength-meter.minca80.js?ver=4.9.15' type='text/javascript'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_password_strength_meter_params = {"min_password_strength":"3","i18n_password_error":"Vui l\u00f2ng nh\u1eadp m\u1eadt kh\u1ea9u kh\u00f3 h\u01a1n.","i18n_password_hint":"G\u1ee3i \u00fd: M\u1eadt kh\u1ea9u ph\u1ea3i c\u00f3 \u00edt nh\u1ea5t 12 k\u00fd t\u1ef1. \u0110\u1ec3 n\u00e2ng cao \u0111\u1ed9 b\u1ea3o m\u1eadt, s\u1eed d\u1ee5ng ch\u1eef in hoa, in th\u01b0\u1eddng, ch\u1eef s\u1ed1 v\u00e0 c\u00e1c k\u00fd t\u1ef1 \u0111\u1eb7c bi\u1ec7t nh\u01b0 ! \" ? $ % ^ & )."};
+/* ]]> */
+
+</script>
+<script src='wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.minc169.js?ver=3.2.6'
+        type='text/javascript'></script>
+<style type="text/css"></style>
+<script type="text/javascript">
+    var essb_clicked_lovethis = false; var essb_love_you_message_thanks = "Thank you for loving this."; var essb_love_you_message_loved = "You already love this today."; var essb_lovethis = function(oInstance) { if (essb_clicked_lovethis) { alert(essb_love_you_message_loved); return; } var element = jQuery('.essb_'+oInstance); if (!element.length) { return; } var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var cookie_set = essb_get_lovecookie("essb_love_"+instance_post_id); if (cookie_set) { alert(essb_love_you_message_loved); return; } if (typeof(essb_settings) != "undefined") { jQuery.post(essb_settings.ajax_url, { 'action': 'essb_love_action', 'post_id': instance_post_id, 'service': 'love', 'nonce': essb_settings.essb3_nonce }, function (data) { if (data) { alert(essb_love_you_message_thanks); }},'json'); } essb_tracking_only('', 'love', oInstance, true); }; var essb_get_lovecookie = function(name) { var value = "; " + document.cookie; var parts = value.split("; " + name + "="); if (parts.length == 2) return parts.pop().split(";").shift(); };var essb_window = function(oUrl, oService, oInstance) { var element = jQuery('.essb_'+oInstance); var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var instance_position = jQuery(element).attr("data-essb-position") || ""; var wnd; var w = 800 ; var h = 500; if (oService == "twitter") { w = 500; h= 300; } var left = (screen.width/2)-(w/2); var top = (screen.height/2)-(h/2); if (oService == "twitter") { wnd = window.open( oUrl, "essb_share_window", "height=300,width=500,resizable=1,scrollbars=yes,top="+top+",left="+left ); } else { wnd = window.open( oUrl, "essb_share_window", "height=500,width=800,resizable=1,scrollbars=yes,top="+top+",left="+left ); } if (typeof(essb_settings) != "undefined") { if (essb_settings.essb3_stats) { if (typeof(essb_handle_stats) != "undefined") { essb_handle_stats(oService, instance_post_id, oInstance); } } if (essb_settings.essb3_ga) { essb_ga_tracking(oService, oUrl, instance_position); } } essb_self_postcount(oService, instance_post_id); var pollTimer = window.setInterval(function() { if (wnd.closed !== false) { window.clearInterval(pollTimer); essb_smart_onclose_events(oService, instance_post_id); } }, 200); }; var essb_self_postcount = function(oService, oCountID) { if (typeof(essb_settings) != "undefined") { oCountID = String(oCountID); jQuery.post(essb_settings.ajax_url, { 'action': 'essb_self_postcount', 'post_id': oCountID, 'service': oService, 'nonce': essb_settings.essb3_nonce }, function (data) { if (data) { }},'json'); } }; var essb_smart_onclose_events = function(oService, oPostID) { if (typeof (essbasc_popup_show) == 'function') { essbasc_popup_show(); } if (typeof essb_acs_code == 'function') { essb_acs_code(oService, oPostID); } }; var essb_tracking_only = function(oUrl, oService, oInstance, oAfterShare) { var element = jQuery('.essb_'+oInstance); if (oUrl == "") { oUrl = document.URL; } var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var instance_position = jQuery(element).attr("data-essb-position") || ""; if (typeof(essb_settings) != "undefined") { if (essb_settings.essb3_stats) { if (typeof(essb_handle_stats) != "undefined") { essb_handle_stats(oService, instance_post_id, oInstance); } } if (essb_settings.essb3_ga) { essb_ga_tracking(oService, oUrl, instance_position); } } essb_self_postcount(oService, instance_post_id); if (oAfterShare) { essb_smart_onclose_events(oService, instance_post_id); } }; var essb_pinterest_picker = function(oInstance) { essb_tracking_only('', 'pinterest', oInstance); var e=document.createElement('script'); e.setAttribute('type','text/javascript'); e.setAttribute('charset','UTF-8'); e.setAttribute('src','../../assets.pinterest.com/js/pinmarklet2a3b.js?r='+Math.random()*99999999);document.body.appendChild(e); };
+</script>
+<script src='js/category.js' type='text/javascript'></script>
+<script src='js/categoryDetail.js' type='text/javascript'></script>
+<script src="js/cart.js"></script>
+<script src="js/login.js"></script>
+<script src="js/search.js"></script>
+<script>
+        jQuery(document).ready(function () {
+            loadProfile();
+            checkUserLogin();
+            getCategory();
+            getCategoryDetail();
+        });
+</script>
+</body>
+</html>
